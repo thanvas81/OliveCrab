@@ -1,0 +1,84 @@
+graph LR
+
+    classDef equip    fill:#2C3E50,stroke:#85929E,color:#fff
+    classDef bin      fill:#F39C12,stroke:#D68910,color:#000
+    classDef crusher  fill:#922B21,stroke:#641E16,color:#fff
+    classDef pump     fill:#1A5276,stroke:#0E3460,color:#fff
+    classDef malax    fill:#1D6A39,stroke:#145A32,color:#fff
+    classDef extract  fill:#4A235A,stroke:#2E1740,color:#fff
+    classDef product  fill:#117A65,stroke:#0E6655,color:#fff
+
+    WASH(["🧼 Πλυντήριο\nΕλαιόκαρπου"])
+
+    subgraph WEIGHING["⚖️  Ζυγιστήριο"]
+        direction TB
+        BIN1["📦 Κάδος ①\nΣυγκράτησης\n― κλαπέτο + έμβολο ―"]
+        BIN2["⚖️ Κάδος ②\nΖύγισης\n― 2× Load Cell 50 kg ―"]
+        BIN1 --> BIN2
+    end
+
+    ELV["🏗️ ①\nΑναβατόριο\nΣπαστήρα\n3,0 HP"]
+
+    FSCR["⚙️ ②\nΠροωθητής\nΣπαστήρα\n1,5 HP"]
+
+    CRUSHER["💥 ③\nΣπαστήρας\n60,0 HP"]
+
+    PSCR["⚙️ ④\nΚοχλίας\nΕμβολοφόρας\n1,5 HP"]
+
+    subgraph FEED["🟠  Τροφοδοσία Μαλακτήρων  ⑤–⑧"]
+        MPUMP["🔵 Εμβολοφόρα\nΜαλακτήρα\n10,0 HP\nHEATEX No1 + No2"]
+        DPIPE["🔀 Σωλήνας Διανομής\nΧ πνευματικές βάνες"]
+        MPUMP --> DPIPE
+    end
+
+    subgraph MALAXATORS["🟢  Συγκρότημα Μαλακτήρων ⑨  —  Χ × 3,0 HP"]
+        direction TB
+        MAL1["🌿 Μαλακτήρας 1\n3,0 HP"]
+        MAL2["🌿 Μαλακτήρας 2\n3,0 HP"]
+        MALN["🌿 Μαλακτήρας Ν\n3,0 HP"]
+    end
+
+    COLLECT["⚙️ ⑩\nΤροφοδότης\nΑντλίας\n3,0 HP"]
+
+    ISCR["⚙️ ⑪\nΚεκλιμένος\nΚοχλίας\n3,0 HP"]
+
+    FMAL["🌀 ⑫\nΤελικός\nΜαλακτήρας\n3,0 HP"]
+
+    APUMP["🔵 ⑬\nΑντλία\nΕλαιόζυμης\n7,5 HP"]
+
+    DEC["🌀 ⑭\nDecanter\n75,0 HP"]
+
+    OIL(["🫙 Λάδι\n→ Δονητικό Φίλτρο"])
+    POMACE(["🪨 Πυρήνας\n→ Κοχλίας Εξαγωγής"])
+
+    %% ── Main flow ──────────────────────────────────────────────────
+    WASH      --> BIN1
+    BIN2      --> ELV
+    ELV       --> FSCR
+    FSCR      --> CRUSHER
+    CRUSHER   --> PSCR
+    PSCR      --> MPUMP
+    DPIPE     --> MAL1
+    DPIPE     --> MAL2
+    DPIPE     --> MALN
+    MAL1      --> COLLECT
+    MAL2      --> COLLECT
+    MALN      --> COLLECT
+    COLLECT   --> ISCR
+    ISCR      --> FMAL
+    FMAL      --> APUMP
+    APUMP     --> DEC
+    DEC       --> OIL
+    DEC       --> POMACE
+
+    %% ── Classes ────────────────────────────────────────────────────
+    class WASH equip
+    class BIN1,BIN2 bin
+    class ELV,FSCR,PSCR equip
+    class CRUSHER crusher
+    class MPUMP,APUMP pump
+    class DPIPE equip
+    class MAL1,MAL2,MALN malax
+    class COLLECT,ISCR,FMAL extract
+    class DEC extract
+    class OIL,POMACE product
