@@ -1,0 +1,45 @@
+gantt
+    title OliveCrab - HW & FW Development Plan - 2 Prototypes
+    dateFormat YYYY-MM-DD
+    axisFormat %b %d
+
+    section Architecture & Specs
+        Requirements & Architecture            :active, req,    2026-05-20, 2026-06-10
+        Specs & Components Search              :specs,          2026-05-25, 2026-06-20
+        Master Board Component Selection       :comp_m,         2026-06-20, 2026-07-05
+        Slave Board Component Selection        :comp_s,         2026-07-05, 2026-07-20
+
+    section HW Design & Manufacturing
+        Master Schematic                       :sch_m,          2026-06-20, 2026-07-10
+        Master PCB Layout                      :lay_m,          2026-07-10, 2026-07-25
+        Master PCB Fabrication x2              :crit, fab_m,    2026-07-25, 2026-08-10
+        Slave Schematic                        :sch_s,          2026-08-10, 2026-08-25
+        Slave PCB Layout                       :lay_s,          2026-08-25, 2026-09-08
+        Slave PCB Fabrication x2               :crit, fab_s,    2026-09-08, 2026-09-24
+
+    section FW Development
+        Toolchain + Eval Board Setup           :fw_1,           2026-06-20, 2026-07-05
+        Load Cell ADC Driver                   :fw_2,           2026-07-05, 2026-07-20
+        Valve GPIO + Weighing State Machine    :fw_3,           2026-07-20, 2026-08-05
+        Greek UI + Receipt Printer             :fw_4,           2026-08-05, 2026-08-15
+        Basic Web UI - Weighing                :fw_5,           2026-08-15, 2026-08-25
+        RS-485 Protocol + Slave MCU Drivers    :fw_6,           2026-08-15, 2026-09-01
+        Malaxator State Machine                :fw_7,           2026-09-01, 2026-09-15
+        LED Logic + Motor Current Sense        :fw_8,           2026-09-08, 2026-09-22
+        Master RS-485 Polling + Web UI         :fw_9,           2026-09-15, 2026-09-29
+        E-STOP Logic + Integration FW          :fw_10,          2026-09-22, 2026-10-06
+
+    section Assembly & Bring-Up
+        Unit 1 Master Assembly                 :asm_1m,         2026-08-10, 2026-08-20
+        Unit 1 Master Bring-Up                 :crit, bup_1m,   2026-08-20, 2026-08-27
+        Unit 1 Slave Assembly                  :asm_1s,         2026-09-24, 2026-10-04
+        Unit 1 Slave Bring-Up                  :crit, bup_1s,   2026-10-04, 2026-10-11
+        Unit 2 Assembly (Master + Slave)       :asm_2,          2026-10-11, 2026-10-21
+        Unit 2 Bring-Up                        :crit, bup_2,    2026-10-21, 2026-10-28
+
+    section Testing
+        Unit 1 Partial Test (Weighing)         :t1_p,           2026-08-27, 2026-09-10
+        Unit 1 Full System Test                :t1_f,           2026-10-11, 2026-10-28
+        Unit 2 Full System Test                :t2_f,           2026-10-28, 2026-11-11
+        Stability Run - Both Units             :t_stab,         2026-11-04, 2026-11-18
+        2x Prototypes Complete                 :milestone, done, 2026-11-18, 0d
