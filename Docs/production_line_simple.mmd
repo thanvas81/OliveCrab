@@ -1,4 +1,4 @@
-graph LR
+﻿graph LR
 
     classDef equip    fill:#2C3E50,stroke:#85929E,color:#fff
     classDef bin      fill:#F39C12,stroke:#D68910,color:#000
@@ -8,48 +8,48 @@ graph LR
     classDef extract  fill:#4A235A,stroke:#2E1740,color:#fff
     classDef product  fill:#117A65,stroke:#0E6655,color:#fff
 
-    WASH(["🧼 Πλυντήριο\nΕλαιόκαρπου"])
+    WASH(["🧼 Πλυντήριο<br/>Ελαιόκαρπου"])
 
     subgraph WEIGHING["⚖️  Ζυγιστήριο"]
         direction TB
-        BIN1["📦 Κάδος ①\nΣυγκράτησης\n― κλαπέτο + έμβολο ―"]
-        BIN2["⚖️ Κάδος ②\nΖύγισης\n― 2× Load Cell 50 kg ―"]
+        BIN1["📦 Κάδος ①<br/>Συγκράτησης<br/>― κλαπέτο + έμβολο ―"]
+        BIN2["⚖️ Κάδος ②<br/>Ζύγισης<br/>― 2× Load Cell 50 kg ―"]
         BIN1 --> BIN2
     end
 
-    ELV["🏗️ ①\nΑναβατόριο\nΣπαστήρα\n3,0 HP"]
+    ELV["🏗️ ①<br/>Αναβατόριο<br/>Σπαστήρα<br/>3,0 HP"]
 
-    FSCR["⚙️ ②\nΠροωθητής\nΣπαστήρα\n1,5 HP"]
+    FSCR["⚙️ ②<br/>Προωθητής<br/>Σπαστήρα<br/>1,5 HP"]
 
-    CRUSHER["💥 ③\nΣπαστήρας\n60,0 HP"]
+    CRUSHER["💥 ③<br/>Σπαστήρας<br/>60,0 HP"]
 
-    PSCR["⚙️ ④\nΚοχλίας\nΕμβολοφόρας\n1,5 HP"]
+    PSCR["⚙️ ④<br/>Κοχλίας<br/>Εμβολοφόρας<br/>1,5 HP"]
 
     subgraph FEED["🟠  Τροφοδοσία Μαλακτήρων  ⑤–⑧"]
-        MPUMP["🔵 Εμβολοφόρα\nΜαλακτήρα\n10,0 HP\nHEATEX No1 + No2"]
-        DPIPE["🔀 Σωλήνας Διανομής\nΧ πνευματικές βάνες"]
+        MPUMP["🔵 Εμβολοφόρα<br/>Μαλακτήρα<br/>10,0 HP<br/>HEATEX No1 + No2"]
+        DPIPE["🔀 Σωλήνας Διανομής<br/>Χ πνευματικές βάνες"]
         MPUMP --> DPIPE
     end
 
     subgraph MALAXATORS["🟢  Συγκρότημα Μαλακτήρων ⑨  —  Χ × 3,0 HP"]
         direction TB
-        MAL1["🌿 Μαλακτήρας 1\n3,0 HP"]
-        MAL2["🌿 Μαλακτήρας 2\n3,0 HP"]
-        MALN["🌿 Μαλακτήρας Ν\n3,0 HP"]
+        MAL1["🌿 Μαλακτήρας 1<br/>3,0 HP"]
+        MAL2["🌿 Μαλακτήρας 2<br/>3,0 HP"]
+        MALN["🌿 Μαλακτήρας Ν<br/>3,0 HP"]
     end
 
-    COLLECT["⚙️ ⑩\nΤροφοδότης\nΑντλίας\n3,0 HP"]
+    COLLECT["⚙️ ⑩<br/>Τροφοδότης<br/>Αντλίας<br/>3,0 HP"]
 
-    ISCR["⚙️ ⑪\nΚεκλιμένος\nΚοχλίας\n3,0 HP"]
+    ISCR["⚙️ ⑪<br/>Κεκλιμένος<br/>Κοχλίας<br/>3,0 HP"]
 
-    FMAL["🌀 ⑫\nΤελικός\nΜαλακτήρας\n3,0 HP"]
+    FMAL["🌀 ⑫<br/>Τελικός<br/>Μαλακτήρας<br/>3,0 HP"]
 
-    APUMP["🔵 ⑬\nΑντλία\nΕλαιόζυμης\n7,5 HP"]
+    APUMP["🔵 ⑬<br/>Αντλία<br/>Ελαιόζυμης<br/>7,5 HP"]
 
-    DEC["🌀 ⑭\nDecanter\n75,0 HP"]
+    DEC["🌀 ⑭<br/>Decanter<br/>75,0 HP"]
 
-    OIL(["🫙 Λάδι\n→ Δονητικό Φίλτρο"])
-    POMACE(["🪨 Πυρήνας\n→ Κοχλίας Εξαγωγής"])
+    OIL(["🫙 Λάδι<br/>→ Δονητικό Φίλτρο"])
+    POMACE(["🪨 Πυρήνας<br/>→ Κοχλίας Εξαγωγής"])
 
     %% ── Main flow ──────────────────────────────────────────────────
     WASH      --> BIN1

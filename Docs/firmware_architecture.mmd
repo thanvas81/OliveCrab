@@ -1,0 +1,117 @@
+﻿graph TD
+
+    classDef app  fill:#1A237E,stroke:#7986CB,color:#fff
+    classDef mw   fill:#4A148C,stroke:#CE93D8,color:#fff
+    classDef bsp  fill:#1B5E20,stroke:#81C784,color:#fff
+    classDef drv  fill:#33691E,stroke:#AED581,color:#fff
+    classDef hw   fill:#37474F,stroke:#90A4AE,color:#fff
+    classDef os   fill:#880E4F,stroke:#F48FB1,color:#fff
+
+    %% ── APP LAYER (Cortex-M7) ──────────────────────────────────────
+
+    subgraph APP["🧠 APP LAYER<br>Cortex-M7"]
+        direction LR
+
+        subgraph STATE["State Machines"]
+            SM_W["⚖️ Weighing State Machine<br>8-step loop"]
+            SM_M["🌿 Malaxator State Machine<br>N cells<br>Sequential"]
+        end
+
+        subgraph UI["User Interface & Comms"]
+            WEBUI["🖥️ Web Server<br>Operator UI Greek<br>RBAC"]
+            MQTT["📨 MQTT Client<br>Telemetry<br>Alarms"]
+            FTPSCP["📁 FTP<br>SCP<br>File Transfer"]
+            PRINT["🖨️ Receipt Printer<br>Greek Text<br>Customer Records"]
+        end
+
+        subgraph SYS["System Services"]
+            OTA["🔄 OTA Manager<br>Secure Boot<br>Secure OTA"]
+            LOG["📋 Logger<br>LittleFS<br>Config<br>Event Log"]
+            RTC_APP["🕐 RTC Service<br>Timestamps<br>Session Records"]
+            AUTH["🔒 Auth RBAC<br>Admin<br>User<br>Viewer<br>Root"]
+        end
+    end
+
+    %% ── MIDDLEWARE ─────────────────────────────────────────────────
+
+    subgraph MW["⚙️ MIDDLEWARE"]
+        direction LR
+        LWIP["LwIP<br>TCP/IP<br>DHCP<br>DNS"]
+        MODBUS["Modbus RTU Master<br>RS-485 x2"]
+        FS["LittleFS<br>SPI Octo Flash"]
+        IPC["IPC Mailbox<br>M7 to M4 Shared Memory"]
+    end
+
+    %% ── BSP (Cortex-M4 real-time tasks) ───────────────────────────
+
+    subgraph BSP["🔧 BSP<br>Board Support Package<br>Cortex-M4"]
+        direction LR
+        T_ADC["ADC Task<br>4x 4-20mA<br>PT100 x2"]
+        T_OUT["Output Task<br>Solenoid x2<br>Opto x4"]
+        T_PWM["PWM Task<br>RGB x3<br>Floodlight x1"]
+        T_RS["RS-485 Task<br>Dual Port<br>Modbus RTU"]
+        T_DI["Digital Input Task<br>Opto x4<br>E-STOP HW"]
+        T_SAFE["Safety Task<br>E-STOP Monitor<br>Output Interlock"]
+    end
+
+    %% ── DRIVERS ────────────────────────────────────────────────────
+
+    subgraph DRV["🔌 DRIVERS"]
+        direction LR
+        D_ADC["4-20mA ADC Driver<br>PT100 RTD Driver"]
+        D_SOL["Solenoid Driver<br>High-Side Current Sense"]
+        D_MOSFET["MOSFET PWM Driver<br>RGB<br>Floodlight"]
+        D_OPTO["Opto I/O Driver<br>Isolated"]
+        D_RS485["RS-485 UART Driver<br>Half-Duplex DE/RE"]
+        D_ETH["Ethernet MAC Driver<br>RMII"]
+        D_FLASH["SPI Octo Flash Driver<br>DMA"]
+        D_RTC["RTC Driver<br>Coin Cell Backup"]
+        D_USB["USB CDC Driver<br>Debug<br>CLI"]
+    end
+
+    %% ── RTOS ───────────────────────────────────────────────────────
+
+    RTOS["🕹️ FreeRTOS<br>Dual-Core SMP<br>Scheduler<br>Queues<br>Semaphores<br>Timers"]
+
+    %% ── HARDWARE ───────────────────────────────────────────────────
+
+    subgraph HW["⚡ HARDWARE"]
+        direction LR
+        HW_MCU["STM32H7<br>Cortex-M7 + M4"]
+        HW_FLASH["SPI Octo Flash 8MB"]
+        HW_PWR["24V PSU<br>DC-DC Isolated 1W<br>Cap Early Warn"]
+        HW_IO["ADC<br>DAC<br>UART<br>SPI<br>Timers<br>Ethernet MAC"]
+    end
+
+    %% ── LAYER CONNECTIONS ──────────────────────────────────────────
+
+    SM_W    --> MW
+    SM_M    --> MW
+    WEBUI   --> MW
+    MQTT    --> MW
+    FTPSCP  --> MW
+    PRINT   --> MW
+    OTA     --> MW
+    LOG     --> MW
+    RTC_APP --> MW
+    AUTH    --> MW
+
+    MW  --> BSP
+    MW  --> RTOS
+
+    BSP --> DRV
+    BSP --> RTOS
+
+    DRV --> RTOS
+    DRV --> HW
+
+    RTOS --> HW
+
+    %% ── CLASSES ────────────────────────────────────────────────────
+
+    class SM_W,SM_M,WEBUI,MQTT,FTPSCP,PRINT,OTA,LOG,RTC_APP,AUTH app
+    class LWIP,MODBUS,FS,IPC mw
+    class T_ADC,T_OUT,T_PWM,T_RS,T_DI,T_SAFE bsp
+    class D_ADC,D_SOL,D_MOSFET,D_OPTO,D_RS485,D_ETH,D_FLASH,D_RTC,D_USB drv
+    class RTOS os
+    class HW_MCU,HW_FLASH,HW_PWR,HW_IO hw

@@ -1,0 +1,139 @@
+﻿graph LR
+
+    classDef board    fill:#1A237E,stroke:#7986CB,color:#fff
+    classDef power    fill:#4E342E,stroke:#A1887F,color:#fff
+    classDef input    fill:#1B5E20,stroke:#81C784,color:#fff
+    classDef output   fill:#7B1FA2,stroke:#CE93D8,color:#fff
+    classDef comms    fill:#0D47A1,stroke:#64B5F6,color:#fff
+    classDef field    fill:#37474F,stroke:#90A4AE,color:#fff
+    classDef net      fill:#006064,stroke:#4DD0E1,color:#fff
+    classDef storage  fill:#33691E,stroke:#AED581,color:#fff
+
+    %% ── FIELD SENSORS ──────────────────────────────────────────────
+
+    subgraph SENSORS["🏭 Field Sensors"]
+        direction TB
+        LC["⚖️ Load Cell Transmitters <br> 4-20mA"]
+        LVL["📏 Level Sensors<br>4-20mA"]
+        VIS["🧪 Viscosity Sensors<br>4-20mA"]
+        TEMP["🌡️ PT100 Probes<br>0..90°C"]
+        DIG_IN["🔌 Limit Switches<br>Digital"]
+        ES_BTN["🍄 E-STOP Buttons<br>Hardwired"]
+    end
+
+    %% ── POWER ──────────────────────────────────────────────────────
+
+    subgraph PWR_SG["⚡ Power"]
+        direction TB
+        PSU["24V DC PSU"]
+        DCDC["DC-DC Isolated<br>1W"]
+        CAP_WARN["Capacitor Early Warning"]
+    end
+
+    %% ── MAIN CONTROLLER BOARD ──────────────────────────────────────
+
+    subgraph BOARD["🧠 OliveCrab Main Controller Board<br>STM32H7 Dual Core"]
+        direction TB
+
+        subgraph MCU["STM32H7"]
+            CM7["Cortex-M7<br>App<br>Web Server<br>State Machines<br>MQTT<br>RBAC"]
+            CM4["Cortex-M4<br>Real-Time I/O<br>Modbus RTU<br>PWM<br>ADC"]
+        end
+
+        subgraph MEM["Storage"]
+            SPIFLASH["SPI Octo Flash 8MB<br>LittleFS<br>OTA Image"]
+            RTC_IC["RTC + Coin Cell"]
+        end
+
+        subgraph IO_FE["I/O Front-End"]
+            ADC_FE["4x 4-20mA Input Stage"]
+            PT100_FE["2x PT100 RTD Interface"]
+            OPTO_IN["4x Opto Input<br>Isolated"]
+            ESTOP_HW["1x E-STOP<br>Dedicated HW Input"]
+        end
+
+        subgraph OUT_FE["Output Drivers"]
+            SOL_DRV["2x Solenoid 24V/1A<br>High-Side Current Sense"]
+            OPTO_OUT["4x Opto Output<br>Open Collector"]
+            RGB_DRV["3x MOSFET PWM 2A/24V<br>RGB LED"]
+            FLD_DRV["1x Power MOSFET 6-7A/24V<br>Floodlight"]
+            AOUT["1x Analog Out<br>4-20mA<br>0-20V Configurable"]
+        end
+
+        subgraph COMMS_IF["Communication"]
+            RS485_1["RS-485 Port 1<br>Modbus RTU"]
+            RS485_2["RS-485 Port 2<br>Modbus RTU"]
+            ETH1["Ethernet RJ45 #1<br>Web UI<br>MQTT"]
+            ETH2["Ethernet RJ45 #2<br>FTP<br>SCP<br>OTA"]
+            USB_IF["USB<br>Debug<br>Flash"]
+            BOOT_HDR["BOOT0 Header<br>Bootloader"]
+        end
+    end
+
+    %% ── FIELD ACTUATORS ────────────────────────────────────────────
+
+    subgraph ACTUATORS["🏭 Field Actuators"]
+        direction TB
+        P_VALVE["🔓🔒 Pneumatic Valves<br>Fill<br>Drain per Malaxator"]
+        RELAYS["⚙️ Motor Contactors & Relay Coils"]
+        RGB_LED["💡 RGB Status LEDs<br>per Malaxator Cell"]
+        FLOODLIGHT["🔦 LED Floodlight<br>Malaxator Lighting"]
+        ANOUT_DEV["📡 Analog Control Device"]
+    end
+
+    %% ── RS-485 BUS DEVICES ─────────────────────────────────────────
+
+    subgraph RS485_BUS["📡 RS-485 Bus Devices<br>Modbus RTU"]
+        direction TB
+        MAL_DISP["💡 Malaxator LED Displays<br>Client<br>Temp<br>Time<br>Status"]
+        RS485_EXT["🔌 RS-485 Smart Sensors & Actuators"]
+    end
+
+    %% ── NETWORK ────────────────────────────────────────────────────
+
+    subgraph NET["🌐 Local Network"]
+        direction TB
+        SWITCH["Network Switch<br>Router"]
+        BROWSER["🖥️ Operator Browser<br>Web UI Greek"]
+        MQTT_B["📨 MQTT Broker<br>Telemetry<br>Logging"]
+        OTA_SRV["🔄 OTA<br>FTP Server<br>Firmware Update"]
+    end
+
+    %% ── CONNECTIONS ────────────────────────────────────────────────
+
+    PSU      --> BOARD
+    DCDC     --> BOARD
+    CAP_WARN --> BOARD
+
+    LC       --> ADC_FE
+    LVL      --> ADC_FE
+    VIS      --> ADC_FE
+    TEMP     --> PT100_FE
+    DIG_IN   --> OPTO_IN
+    ES_BTN   --> ESTOP_HW
+
+    SOL_DRV  --> P_VALVE
+    OPTO_OUT --> RELAYS
+    RGB_DRV  --> RGB_LED
+    FLD_DRV  --> FLOODLIGHT
+    AOUT     --> ANOUT_DEV
+
+    RS485_1  <-->|"Bus A"| MAL_DISP
+    RS485_2  <-->|"Bus B"| RS485_EXT
+
+    ETH1     --> SWITCH
+    ETH2     --> SWITCH
+    SWITCH   --> BROWSER
+    SWITCH   --> MQTT_B
+    SWITCH   --> OTA_SRV
+
+    %% ── CLASSES ────────────────────────────────────────────────────
+
+    class BOARD,MCU,CM7,CM4,MEM,IO_FE,OUT_FE,COMMS_IF board
+    class SPIFLASH,RTC_IC storage
+    class PSU,DCDC,CAP_WARN power
+    class LC,LVL,VIS,TEMP,DIG_IN,ES_BTN,ADC_FE,PT100_FE,OPTO_IN,ESTOP_HW input
+    class P_VALVE,RELAYS,RGB_LED,FLOODLIGHT,ANOUT_DEV,SOL_DRV,OPTO_OUT,RGB_DRV,FLD_DRV,AOUT output
+    class RS485_1,RS485_2,ETH1,ETH2,USB_IF,BOOT_HDR,MAL_DISP,RS485_EXT comms
+    class SWITCH,BROWSER,MQTT_B,OTA_SRV net
+    class SENSORS,ACTUATORS,RS485_BUS field

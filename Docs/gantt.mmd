@@ -1,0 +1,48 @@
+gantt
+    title OliveCrab — Single Controller Board Development Plan  (2 Prototypes · Target 20 Oct 2026)
+    dateFormat YYYY-MM-DD
+    axisFormat %b %d
+
+    section Architecture & Specs
+        Requirements & Architecture            :active, req,    2026-05-20, 2026-06-10
+        Specs & Component Search               :specs,          2026-05-25, 2026-06-20
+        Board Component Selection              :comp,           2026-06-10, 2026-06-30
+
+    section HW Design & Manufacturing
+        Schematic — KiCad                      :sch,            2026-06-20, 2026-07-10
+        BOM Ordering                           :bom,            2026-07-05, 2026-07-22
+        PCB Layout — KiCad                     :lay,            2026-07-10, 2026-07-25
+        DRC + Design Review                    :rev,            2026-07-23, 2026-07-27
+        PCB Fabrication × 2                    :crit, fab,      2026-07-27, 2026-08-12
+
+    section FW Development
+        Toolchain + FreeRTOS Dual-Core Setup   :fw1,            2026-06-20, 2026-07-05
+        BSP — SPI Octo Flash · RTC · USB       :fw2,            2026-07-05, 2026-07-20
+        4-20mA Input + PT100 Drivers           :fw3,            2026-07-10, 2026-07-25
+        RS-485 Dual Port + Modbus RTU          :fw4,            2026-07-20, 2026-08-05
+        Solenoid Driver + High-Side Curr Sense :fw5,            2026-07-25, 2026-08-10
+        MOSFET PWM — RGB LED + Floodlight      :fw6,            2026-08-05, 2026-08-17
+        Opto I/O + Dedicated E-STOP Logic      :fw7,            2026-08-10, 2026-08-22
+        LittleFS — Config + Logging            :fw8,            2026-08-15, 2026-08-27
+        Weighing State Machine                 :fw9,            2026-08-12, 2026-08-28
+        Receipt Printer + Greek UI             :fw10,           2026-08-22, 2026-09-05
+        Malaxator State Machine                :fw11,           2026-08-27, 2026-09-12
+        LwIP Web Server + Operator Web UI      :fw12,           2026-09-01, 2026-09-19
+        MQTT Client                            :fw13,           2026-09-08, 2026-09-19
+        RBAC + Authentication                  :fw14,           2026-09-12, 2026-09-22
+        OTA Bootloader — Secure Boot + OTA     :crit, fw15,     2026-09-18, 2026-10-04
+        Integration FW + System-Level Tests    :fw16,           2026-09-22, 2026-10-07
+
+    section Assembly & Bring-Up
+        Unit 1 — Assembly                      :asm1,           2026-08-12, 2026-08-22
+        Unit 1 — Power-On + Bring-Up           :crit, bup1,     2026-08-22, 2026-09-01
+        Unit 2 — Assembly                      :asm2,           2026-09-18, 2026-09-28
+        Unit 2 — Power-On + Bring-Up           :crit, bup2,     2026-09-28, 2026-10-05
+
+    section Testing & Validation
+        Unit 1 — Peripheral + I/O Validation   :t1p,            2026-09-01, 2026-09-14
+        Unit 1 — Weighing System Test          :t1w,            2026-09-10, 2026-09-22
+        Unit 1 — Malaxator Control Test        :t1m,            2026-09-18, 2026-10-01
+        Unit 2 — Full System Test              :t2f,            2026-10-05, 2026-10-15
+        Stability Run — Both Units             :crit, tstab,    2026-10-12, 2026-10-20
+        ★  2× Prototypes Complete              :milestone, done, 2026-10-20, 0d
