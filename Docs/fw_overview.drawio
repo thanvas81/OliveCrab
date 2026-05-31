@@ -1,926 +1,778 @@
 <mxfile host="65bd71144e">
     <diagram name="Page-1" id="olivecrab-fw-overview">
-        <mxGraphModel dx="1554" dy="1147" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+        <mxGraphModel dx="2047" dy="1147" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
 
-                <!-- Title -->
-                <mxCell id="t1" value="Διάγραμμα Firmware&lt;br&gt;Λογισμικό Πλακέτας" style="whiteSpace=wrap;html=1;fontSize=18;fillColor=#ffffff;" parent="1" vertex="1">
-                    <mxGeometry x="10" y="10" width="230" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="t2" value="OliveCrab — Modules, Tasks &amp; Drivers" style="whiteSpace=wrap;html=1;fontSize=22;fillColor=#ffffff;fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="250" y="40" width="710" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="t3" value="Έκδοση" style="whiteSpace=wrap;html=1;fontSize=18;fillColor=#ffffff;" parent="1" vertex="1">
-                    <mxGeometry x="990" y="10" width="90" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="t4" value="1.0" style="whiteSpace=wrap;html=1;fontSize=22;fillColor=#ffffff;fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="990" y="40" width="90" height="50" as="geometry"/>
-                </mxCell>
-
                 <!-- ==================== ROW 1 ==================== -->
 
                 <!-- RTOS / ΠΥΡΗΝΑΣ -->
-                <mxCell id="sw_rtos" value="RTOS / Πυρήνας" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="20" y="110" width="160" height="200" as="geometry"/>
+                <mxCell id="sw_rtos" value="RTOS / Πυρήνας" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="110" width="150" height="190" as="geometry"/>
                 </mxCell>
-                <!-- FreeRTOS -->
-                <mxCell id="rt1g" value="" style="group" connectable="0" vertex="1" parent="sw_rtos">
+                <mxCell id="rt1g" value="" style="group" parent="sw_rtos" connectable="0" vertex="1">
                     <mxGeometry x="10" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="rt1g2" value="" style="group" connectable="0" vertex="1" parent="rt1g">
+                <mxCell id="rt1g2" value="" style="group" parent="rt1g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="rt1g3" value="" style="group;fillColor=#fff2cc;strokeColor=#d6b656;" connectable="0" vertex="1" parent="rt1g2">
+                <mxCell id="rt1g3" value="" style="group;fillColor=#fff2cc;strokeColor=#d6b656;" parent="rt1g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="rt1s" value="Kernel&lt;br&gt;Tasks&lt;br&gt;Scheduler" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="rt1g3">
+                <mxCell id="rt1s" value="Kernel&lt;br&gt;Tasks&lt;br&gt;Scheduler" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fff2cc;strokeColor=#d6b656;" parent="rt1g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="rt1f" value="Preemptive" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="rt1g3">
+                <mxCell id="rt1f" value="Preemptive" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="rt1g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="rt1n" value="FreeRTOS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;" vertex="1" parent="rt1g2">
+                <mxCell id="rt1n" value="FreeRTOS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;" parent="rt1g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="rt1q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="rt1g">
+                <mxCell id="rt1q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="rt1g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <!-- IPC -->
-                <mxCell id="rt2g" value="" style="group" connectable="0" vertex="1" parent="sw_rtos">
+                <mxCell id="rt2g" value="" style="group" parent="sw_rtos" connectable="0" vertex="1">
                     <mxGeometry x="80" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="rt2g2" value="" style="group" connectable="0" vertex="1" parent="rt2g">
+                <mxCell id="rt2g2" value="" style="group" parent="rt2g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="rt2g3" value="" style="group;fillColor=#fff2cc;strokeColor=#d6b656;" connectable="0" vertex="1" parent="rt2g2">
+                <mxCell id="rt2g3" value="" style="group;fillColor=#fff2cc;strokeColor=#d6b656;" parent="rt2g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="rt2s" value="Queue&lt;br&gt;Semaphore&lt;br&gt;Mutex" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="rt2g3">
+                <mxCell id="rt2s" value="Queue&lt;br&gt;Semaphore&lt;br&gt;Mutex" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fff2cc;strokeColor=#d6b656;" parent="rt2g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="rt2f" value="IPC / Sync" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="rt2g3">
+                <mxCell id="rt2f" value="IPC / Sync" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="rt2g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="rt2n" value="IPC" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;" vertex="1" parent="rt2g2">
+                <mxCell id="rt2n" value="IPC" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;" parent="rt2g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="rt2q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="rt2g">
+                <mxCell id="rt2q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="rt2g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
 
                 <!-- CORTEX-M7 ΕΦΑΡΜΟΓΗ -->
-                <mxCell id="sw_m7" value="Cortex-M7 — Εφαρμογή" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="190" y="110" width="520" height="200" as="geometry"/>
+                <mxCell id="sw_m7" value="Cortex-M7 — Εφαρμογή" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="110" width="430" height="190" as="geometry"/>
                 </mxCell>
-                <!-- Web Server -->
-                <mxCell id="m71g" value="" style="group" connectable="0" vertex="1" parent="sw_m7">
+                <mxCell id="m71g" value="" style="group" parent="sw_m7" connectable="0" vertex="1">
                     <mxGeometry x="10" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="m71g2" value="" style="group" connectable="0" vertex="1" parent="m71g">
+                <mxCell id="m71g2" value="" style="group" parent="m71g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="m71g3" value="" style="group;fillColor=#dae8fc;strokeColor=#6c8ebf;" connectable="0" vertex="1" parent="m71g2">
+                <mxCell id="m71g3" value="" style="group;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="m71g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="m71s" value="Task&lt;br&gt;HTTP&lt;br&gt;Port 80" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="m71g3">
+                <mxCell id="m71s" value="Task&lt;br&gt;HTTP&lt;br&gt;Port 80" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="m71g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="m71f" value="LwIP" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="m71g3">
+                <mxCell id="m71f" value="LwIP" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="m71g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="m71n" value="Web Server" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="m71g2">
+                <mxCell id="m71n" value="Web Server" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="m71g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="m71q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="m71g">
+                <mxCell id="m71q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="m71g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <!-- MQTT Client -->
-                <mxCell id="m72g" value="" style="group" connectable="0" vertex="1" parent="sw_m7">
+                <mxCell id="m72g" value="" style="group" parent="sw_m7" connectable="0" vertex="1">
                     <mxGeometry x="80" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="m72g2" value="" style="group" connectable="0" vertex="1" parent="m72g">
+                <mxCell id="m72g2" value="" style="group" parent="m72g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="m72g3" value="" style="group;fillColor=#dae8fc;strokeColor=#6c8ebf;" connectable="0" vertex="1" parent="m72g2">
+                <mxCell id="m72g3" value="" style="group;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="m72g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="m72s" value="Task&lt;br&gt;MQTT&lt;br&gt;Broker" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="m72g3">
+                <mxCell id="m72s" value="Task&lt;br&gt;MQTT&lt;br&gt;Broker" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="m72g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="m72f" value="LwIP / TCP" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="m72g3">
+                <mxCell id="m72f" value="LwIP / TCP" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="m72g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="m72n" value="MQTT Client" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="m72g2">
+                <mxCell id="m72n" value="MQTT Client" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="m72g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="m72q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="m72g">
+                <mxCell id="m72q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="m72g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <!-- FTP / SCP -->
-                <mxCell id="m73g" value="" style="group" connectable="0" vertex="1" parent="sw_m7">
+                <mxCell id="m73g" value="" style="group" parent="sw_m7" connectable="0" vertex="1">
                     <mxGeometry x="150" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="m73g2" value="" style="group" connectable="0" vertex="1" parent="m73g">
+                <mxCell id="m73g2" value="" style="group" parent="m73g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="m73g3" value="" style="group;fillColor=#dae8fc;strokeColor=#6c8ebf;" connectable="0" vertex="1" parent="m73g2">
+                <mxCell id="m73g3" value="" style="group;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="m73g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="m73s" value="Task&lt;br&gt;FTP · SCP&lt;br&gt;File XFR" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="m73g3">
+                <mxCell id="m73s" value="Task&lt;br&gt;FTP · SCP&lt;br&gt;File XFR" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="m73g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="m73f" value="LwIP / TCP" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="m73g3">
+                <mxCell id="m73f" value="LwIP / TCP" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="m73g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="m73n" value="FTP / SCP" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="m73g2">
+                <mxCell id="m73n" value="FTP / SCP" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="m73g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="m73q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="m73g">
+                <mxCell id="m73q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="m73g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <!-- OTA Update -->
-                <mxCell id="m74g" value="" style="group" connectable="0" vertex="1" parent="sw_m7">
+                <mxCell id="m74g" value="" style="group" parent="sw_m7" connectable="0" vertex="1">
                     <mxGeometry x="220" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="m74g2" value="" style="group" connectable="0" vertex="1" parent="m74g">
+                <mxCell id="m74g2" value="" style="group" parent="m74g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="m74g3" value="" style="group;fillColor=#dae8fc;strokeColor=#6c8ebf;" connectable="0" vertex="1" parent="m74g2">
+                <mxCell id="m74g3" value="" style="group;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="m74g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="m74s" value="Task&lt;br&gt;FOTA&lt;br&gt;Secure" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="m74g3">
+                <mxCell id="m74s" value="Task&lt;br&gt;FOTA&lt;br&gt;Secure" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="m74g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="m74f" value="Bootloader" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="m74g3">
+                <mxCell id="m74f" value="Bootloader" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="m74g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="m74n" value="OTA Update" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="m74g2">
+                <mxCell id="m74n" value="OTA Update" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="m74g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="m74q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="m74g">
+                <mxCell id="m74q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="m74g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <!-- Logger -->
-                <mxCell id="m75g" value="" style="group" connectable="0" vertex="1" parent="sw_m7">
+                <mxCell id="m75g" value="" style="group" parent="sw_m7" connectable="0" vertex="1">
                     <mxGeometry x="290" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="m75g2" value="" style="group" connectable="0" vertex="1" parent="m75g">
+                <mxCell id="m75g2" value="" style="group" parent="m75g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="m75g3" value="" style="group;fillColor=#dae8fc;strokeColor=#6c8ebf;" connectable="0" vertex="1" parent="m75g2">
+                <mxCell id="m75g3" value="" style="group;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="m75g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="m75s" value="Task&lt;br&gt;Event&lt;br&gt;Log" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="m75g3">
+                <mxCell id="m75s" value="Task&lt;br&gt;Event&lt;br&gt;Log" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="m75g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="m75f" value="LittleFS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="m75g3">
+                <mxCell id="m75f" value="LittleFS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="m75g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="m75n" value="Logger" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="m75g2">
+                <mxCell id="m75n" value="Logger" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="m75g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="m75q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="m75g">
+                <mxCell id="m75q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="m75g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <!-- RBAC Auth -->
-                <mxCell id="m76g" value="" style="group" connectable="0" vertex="1" parent="sw_m7">
+                <mxCell id="m76g" value="" style="group" parent="sw_m7" connectable="0" vertex="1">
                     <mxGeometry x="360" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="m76g2" value="" style="group" connectable="0" vertex="1" parent="m76g">
+                <mxCell id="m76g2" value="" style="group" parent="m76g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="m76g3" value="" style="group;fillColor=#dae8fc;strokeColor=#6c8ebf;" connectable="0" vertex="1" parent="m76g2">
+                <mxCell id="m76g3" value="" style="group;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="m76g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="m76s" value="Module&lt;br&gt;RBAC&lt;br&gt;Auth" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="m76g3">
+                <mxCell id="m76s" value="Module&lt;br&gt;RBAC&lt;br&gt;Auth" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="m76g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="m76f" value="Sessions" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="m76g3">
+                <mxCell id="m76f" value="Sessions" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="m76g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="m76n" value="RBAC" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="m76g2">
+                <mxCell id="m76n" value="RBAC" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="m76g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="m76q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="m76g">
-                    <mxGeometry y="120" width="60" height="20" as="geometry"/>
-                </mxCell>
-                <!-- State Machine Manager -->
-                <mxCell id="m77g" value="" style="group" connectable="0" vertex="1" parent="sw_m7">
-                    <mxGeometry x="430" y="30" width="60" height="140" as="geometry"/>
-                </mxCell>
-                <mxCell id="m77g2" value="" style="group" connectable="0" vertex="1" parent="m77g">
-                    <mxGeometry width="60" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="m77g3" value="" style="group;fillColor=#dae8fc;strokeColor=#6c8ebf;" connectable="0" vertex="1" parent="m77g2">
-                    <mxGeometry y="30" width="60" height="90" as="geometry"/>
-                </mxCell>
-                <mxCell id="m77s" value="Task&lt;br&gt;State&lt;br&gt;Manager" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="m77g3">
-                    <mxGeometry width="60" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="m77f" value="IPC / M4" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="m77g3">
-                    <mxGeometry y="60" width="60" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="m77n" value="State Mach." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="m77g2">
-                    <mxGeometry width="60" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="m77q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="m77g">
+                <mxCell id="m76q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="m76g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
 
-                <!-- ΑΠΟΘΗΚΕΥΣΗ / LittleFS -->
-                <mxCell id="sw_store" value="Αποθήκευση / LittleFS" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="720" y="110" width="430" height="200" as="geometry"/>
+                <!-- ΑΠΟΘΗΚΕΥΣΗ -->
+                <mxCell id="sw_store" value="Αποθήκευση / LittleFS" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="620" y="110" width="240" height="190" as="geometry"/>
                 </mxCell>
-                <!-- LittleFS -->
-                <mxCell id="st1g" value="" style="group" connectable="0" vertex="1" parent="sw_store">
+                <mxCell id="st1g" value="" style="group" parent="sw_store" connectable="0" vertex="1">
                     <mxGeometry x="10" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="st1g2" value="" style="group" connectable="0" vertex="1" parent="st1g">
+                <mxCell id="st1g2" value="" style="group" parent="st1g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="st1g3" value="" style="group;fillColor=#d5e8d4;strokeColor=#82b366;" connectable="0" vertex="1" parent="st1g2">
+                <mxCell id="st1g3" value="" style="group;fillColor=#d5e8d4;strokeColor=#82b366;" parent="st1g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="st1s" value="FS&lt;br&gt;LittleFS&lt;br&gt;8 MB" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="st1g3">
+                <mxCell id="st1s" value="FS&lt;br&gt;LittleFS&lt;br&gt;8 MB" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" parent="st1g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="st1f" value="SPI Flash" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="st1g3">
+                <mxCell id="st1f" value="SPI Flash" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="st1g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="st1n" value="LittleFS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="st1g2">
+                <mxCell id="st1n" value="LittleFS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="st1g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="st1q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="st1g">
+                <mxCell id="st1q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="st1g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <!-- OTA Partition -->
-                <mxCell id="st2g" value="" style="group" connectable="0" vertex="1" parent="sw_store">
+                <mxCell id="st2g" value="" style="group" parent="sw_store" connectable="0" vertex="1">
                     <mxGeometry x="80" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="st2g2" value="" style="group" connectable="0" vertex="1" parent="st2g">
+                <mxCell id="st2g2" value="" style="group" parent="st2g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="st2g3" value="" style="group;fillColor=#d5e8d4;strokeColor=#82b366;" connectable="0" vertex="1" parent="st2g2">
+                <mxCell id="st2g3" value="" style="group;fillColor=#d5e8d4;strokeColor=#82b366;" parent="st2g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="st2s" value="Partition&lt;br&gt;OTA&lt;br&gt;Dual Bank" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="st2g3">
+                <mxCell id="st2s" value="Partition&lt;br&gt;OTA&lt;br&gt;Dual Bank" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" parent="st2g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="st2f" value="SPI Flash" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="st2g3">
+                <mxCell id="st2f" value="SPI Flash" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="st2g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="st2n" value="OTA Partition" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="st2g2">
+                <mxCell id="st2n" value="OTA Partition" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="st2g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="st2q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="st2g">
+                <mxCell id="st2q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="st2g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <!-- Config Files -->
-                <mxCell id="st3g" value="" style="group" connectable="0" vertex="1" parent="sw_store">
+                <mxCell id="st3g" value="" style="group" parent="sw_store" connectable="0" vertex="1">
                     <mxGeometry x="150" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="st3g2" value="" style="group" connectable="0" vertex="1" parent="st3g">
+                <mxCell id="st3g2" value="" style="group" parent="st3g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="st3g3" value="" style="group;fillColor=#d5e8d4;strokeColor=#82b366;" connectable="0" vertex="1" parent="st3g2">
+                <mxCell id="st3g3" value="" style="group;fillColor=#d5e8d4;strokeColor=#82b366;" parent="st3g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="st3s" value="File&lt;br&gt;Config&lt;br&gt;JSON" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="st3g3">
+                <mxCell id="st3s" value="Driver&lt;br&gt;RTC&lt;br&gt;Timestamps" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" parent="st3g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="st3f" value="LittleFS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="st3g3">
+                <mxCell id="st3f" value="I2C / CR2032" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="st3g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="st3n" value="Config Files" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="st3g2">
+                <mxCell id="st3n" value="RTC Driver" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="st3g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="st3q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="st3g">
-                    <mxGeometry y="120" width="60" height="20" as="geometry"/>
-                </mxCell>
-                <!-- Log Files -->
-                <mxCell id="st4g" value="" style="group" connectable="0" vertex="1" parent="sw_store">
-                    <mxGeometry x="220" y="30" width="60" height="140" as="geometry"/>
-                </mxCell>
-                <mxCell id="st4g2" value="" style="group" connectable="0" vertex="1" parent="st4g">
-                    <mxGeometry width="60" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="st4g3" value="" style="group;fillColor=#d5e8d4;strokeColor=#82b366;" connectable="0" vertex="1" parent="st4g2">
-                    <mxGeometry y="30" width="60" height="90" as="geometry"/>
-                </mxCell>
-                <mxCell id="st4s" value="File&lt;br&gt;Logs&lt;br&gt;Circular" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="st4g3">
-                    <mxGeometry width="60" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="st4f" value="LittleFS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="st4g3">
-                    <mxGeometry y="60" width="60" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="st4n" value="Log Files" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="st4g2">
-                    <mxGeometry width="60" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="st4q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="st4g">
-                    <mxGeometry y="120" width="60" height="20" as="geometry"/>
-                </mxCell>
-                <!-- RTC / Timestamps -->
-                <mxCell id="st5g" value="" style="group" connectable="0" vertex="1" parent="sw_store">
-                    <mxGeometry x="290" y="30" width="60" height="140" as="geometry"/>
-                </mxCell>
-                <mxCell id="st5g2" value="" style="group" connectable="0" vertex="1" parent="st5g">
-                    <mxGeometry width="60" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="st5g3" value="" style="group;fillColor=#d5e8d4;strokeColor=#82b366;" connectable="0" vertex="1" parent="st5g2">
-                    <mxGeometry y="30" width="60" height="90" as="geometry"/>
-                </mxCell>
-                <mxCell id="st5s" value="Driver&lt;br&gt;RTC&lt;br&gt;Timestamps" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="st5g3">
-                    <mxGeometry width="60" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="st5f" value="I2C / CR2032" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="st5g3">
-                    <mxGeometry y="60" width="60" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="st5n" value="RTC Driver" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="st5g2">
-                    <mxGeometry width="60" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="st5q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="st5g">
+                <mxCell id="st3q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="st3g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
 
                 <!-- ==================== ROW 2 ==================== -->
 
                 <!-- CORTEX-M4 REAL-TIME I/O -->
-                <mxCell id="sw_m4" value="Cortex-M4 — Real-Time I/O" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="20" y="330" width="520" height="200" as="geometry"/>
+                <mxCell id="sw_m4" value="Cortex-M4 — Real-Time I/O" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="320" width="500" height="190" as="geometry"/>
                 </mxCell>
-                <!-- State Machines -->
-                <mxCell id="m41g" value="" style="group" connectable="0" vertex="1" parent="sw_m4">
+                <mxCell id="m41g" value="" style="group" parent="sw_m4" connectable="0" vertex="1">
                     <mxGeometry x="10" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="m41g2" value="" style="group" connectable="0" vertex="1" parent="m41g">
+                <mxCell id="m41g2" value="" style="group" parent="m41g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="m41g3" value="" style="group;fillColor=#ffe6cc;strokeColor=#d79b00;" connectable="0" vertex="1" parent="m41g2">
+                <mxCell id="m41g3" value="" style="group;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="m41g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="m41s" value="Task&lt;br&gt;Process&lt;br&gt;FSM" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="m41g3">
+                <mxCell id="m41s" value="Task&lt;br&gt;Process&lt;br&gt;FSM" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="m41g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="m41f" value="M4 Core" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="m41g3">
+                <mxCell id="m41f" value="M4 Core" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="m41g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="m41n" value="State Mach." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="m41g2">
+                <mxCell id="m41n" value="State Mach." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="m41g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="m41q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="m41g">
+                <mxCell id="m41q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="m41g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <!-- Modbus RTU x2 -->
-                <mxCell id="m42g" value="" style="group" connectable="0" vertex="1" parent="sw_m4">
+                <mxCell id="m42g" value="" style="group" parent="sw_m4" connectable="0" vertex="1">
                     <mxGeometry x="80" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="m42g2" value="" style="group" connectable="0" vertex="1" parent="m42g">
+                <mxCell id="m42g2" value="" style="group" parent="m42g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="m42g3" value="" style="group;fillColor=#ffe6cc;strokeColor=#d79b00;" connectable="0" vertex="1" parent="m42g2">
+                <mxCell id="m42g3" value="" style="group;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="m42g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="m42s" value="Driver&lt;br&gt;Modbus&lt;br&gt;RTU" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="m42g3">
+                <mxCell id="m42s" value="Driver&lt;br&gt;Modbus&lt;br&gt;RTU" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="m42g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="m42f" value="RS-485" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="m42g3">
+                <mxCell id="m42f" value="RS-485" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="m42g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="m42n" value="Modbus RTU" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="m42g2">
+                <mxCell id="m42n" value="Modbus RTU" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="m42g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="m42q" value="x2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="m42g">
+                <mxCell id="m42q" value="x2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="m42g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <!-- ADC Processing -->
-                <mxCell id="m43g" value="" style="group" connectable="0" vertex="1" parent="sw_m4">
+                <mxCell id="m43g" value="" style="group" parent="sw_m4" connectable="0" vertex="1">
                     <mxGeometry x="150" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="m43g2" value="" style="group" connectable="0" vertex="1" parent="m43g">
+                <mxCell id="m43g2" value="" style="group" parent="m43g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="m43g3" value="" style="group;fillColor=#ffe6cc;strokeColor=#d79b00;" connectable="0" vertex="1" parent="m43g2">
+                <mxCell id="m43g3" value="" style="group;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="m43g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="m43s" value="Driver&lt;br&gt;ADC&lt;br&gt;4-20mA" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="m43g3">
+                <mxCell id="m43s" value="Driver&lt;br&gt;ADC&lt;br&gt;4-20mA" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="m43g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="m43f" value="HAL / DMA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="m43g3">
+                <mxCell id="m43f" value="HAL / DMA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="m43g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="m43n" value="ADC Driver" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="m43g2">
+                <mxCell id="m43n" value="ADC Driver" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="m43g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="m43q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="m43g">
+                <mxCell id="m43q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="m43g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <!-- PWM Control -->
-                <mxCell id="m44g" value="" style="group" connectable="0" vertex="1" parent="sw_m4">
+                <mxCell id="m44g" value="" style="group" parent="sw_m4" connectable="0" vertex="1">
                     <mxGeometry x="220" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="m44g2" value="" style="group" connectable="0" vertex="1" parent="m44g">
+                <mxCell id="m44g2" value="" style="group" parent="m44g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="m44g3" value="" style="group;fillColor=#ffe6cc;strokeColor=#d79b00;" connectable="0" vertex="1" parent="m44g2">
+                <mxCell id="m44g3" value="" style="group;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="m44g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="m44s" value="Driver&lt;br&gt;PWM&lt;br&gt;TIM" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="m44g3">
+                <mxCell id="m44s" value="Driver&lt;br&gt;PWM&lt;br&gt;TIM" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="m44g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="m44f" value="HAL / TIM" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="m44g3">
+                <mxCell id="m44f" value="HAL / TIM" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="m44g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="m44n" value="PWM Driver" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="m44g2">
+                <mxCell id="m44n" value="PWM Driver" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="m44g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="m44q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="m44g">
+                <mxCell id="m44q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="m44g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <!-- Safety Monitor -->
-                <mxCell id="m45g" value="" style="group" connectable="0" vertex="1" parent="sw_m4">
+                <mxCell id="m45g" value="" style="group" parent="sw_m4" connectable="0" vertex="1">
                     <mxGeometry x="290" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="m45g2" value="" style="group" connectable="0" vertex="1" parent="m45g">
+                <mxCell id="m45g2" value="" style="group" parent="m45g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="m45g3" value="" style="group;fillColor=#f8cecc;strokeColor=#b85450;" connectable="0" vertex="1" parent="m45g2">
+                <mxCell id="m45g3" value="" style="group;fillColor=#f8cecc;strokeColor=#b85450;" parent="m45g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="m45s" value="Task&lt;br&gt;Safety&lt;br&gt;Monitor" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="m45g3">
+                <mxCell id="m45s" value="Task&lt;br&gt;Safety&lt;br&gt;Monitor" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" parent="m45g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="m45f" value="HW / ISR" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="m45g3">
+                <mxCell id="m45f" value="HW / ISR" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="m45g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="m45n" value="Safety Mon." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="m45g2">
+                <mxCell id="m45n" value="Safety Mon." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="m45g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="m45q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="m45g">
+                <mxCell id="m45q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="m45g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <!-- E-STOP ISR -->
-                <mxCell id="m46g" value="" style="group" connectable="0" vertex="1" parent="sw_m4">
+                <mxCell id="m46g" value="" style="group" parent="sw_m4" connectable="0" vertex="1">
                     <mxGeometry x="360" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="m46g2" value="" style="group" connectable="0" vertex="1" parent="m46g">
+                <mxCell id="m46g2" value="" style="group" parent="m46g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="m46g3" value="" style="group;fillColor=#f8cecc;strokeColor=#b85450;" connectable="0" vertex="1" parent="m46g2">
+                <mxCell id="m46g3" value="" style="group;fillColor=#f8cecc;strokeColor=#b85450;" parent="m46g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="m46s" value="ISR&lt;br&gt;E-STOP&lt;br&gt;NC HW" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="m46g3">
+                <mxCell id="m46s" value="ISR&lt;br&gt;E-STOP&lt;br&gt;NC HW" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" parent="m46g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="m46f" value="Dedicated" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="m46g3">
+                <mxCell id="m46f" value="Dedicated" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="m46g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="m46n" value="E-STOP ISR" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="m46g2">
+                <mxCell id="m46n" value="E-STOP ISR" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="m46g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="m46q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="m46g">
+                <mxCell id="m46q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="m46g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <!-- Current Sense -->
-                <mxCell id="m47g" value="" style="group" connectable="0" vertex="1" parent="sw_m4">
+                <mxCell id="m47g" value="" style="group" parent="sw_m4" connectable="0" vertex="1">
                     <mxGeometry x="430" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="m47g2" value="" style="group" connectable="0" vertex="1" parent="m47g">
+                <mxCell id="m47g2" value="" style="group" parent="m47g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="m47g3" value="" style="group;fillColor=#ffe6cc;strokeColor=#d79b00;" connectable="0" vertex="1" parent="m47g2">
+                <mxCell id="m47g3" value="" style="group;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="m47g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="m47s" value="Driver&lt;br&gt;Curr Sense&lt;br&gt;High-Side" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="m47g3">
+                <mxCell id="m47s" value="Driver&lt;br&gt;Curr Sense&lt;br&gt;High-Side" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="m47g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="m47f" value="ADC / HAL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="m47g3">
+                <mxCell id="m47f" value="ADC / HAL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="m47g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="m47n" value="Curr Sense" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="m47g2">
+                <mxCell id="m47n" value="Curr Sense" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="m47g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="m47q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="m47g">
+                <mxCell id="m47q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="m47g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
 
-                <!-- ΔΙΚΤΥΟ / LwIP Stack -->
-                <mxCell id="sw_net" value="Δίκτυο / LwIP Stack" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="550" y="330" width="310" height="200" as="geometry"/>
+                <!-- ΔΙΚΤΥΟ / LwIP -->
+                <mxCell id="sw_net" value="Δίκτυο / LwIP Stack" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="530" y="320" width="330" height="190" as="geometry"/>
                 </mxCell>
-                <!-- TCP/IP -->
-                <mxCell id="n1g" value="" style="group" connectable="0" vertex="1" parent="sw_net">
+                <mxCell id="n1g" value="" style="group" parent="sw_net" connectable="0" vertex="1">
                     <mxGeometry x="10" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="n1g2" value="" style="group" connectable="0" vertex="1" parent="n1g">
+                <mxCell id="n1g2" value="" style="group" parent="n1g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="n1g3" value="" style="group" connectable="0" vertex="1" parent="n1g2">
+                <mxCell id="n1g3" value="" style="group" parent="n1g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="n1s" value="Stack&lt;br&gt;TCP · IP&lt;br&gt;LwIP" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="n1g3">
+                <mxCell id="n1s" value="Stack&lt;br&gt;TCP · IP&lt;br&gt;LwIP" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="n1g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="n1f" value="LAN8742" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="n1g3">
+                <mxCell id="n1f" value="LAN8742" style="rounded=0;whiteSpace=wrap;html=1;" parent="n1g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="n1n" value="TCP / IP" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="n1g2">
+                <mxCell id="n1n" value="TCP / IP" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="n1g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="n1q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="n1g">
+                <mxCell id="n1q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="n1g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <!-- DHCP -->
-                <mxCell id="n2g" value="" style="group" connectable="0" vertex="1" parent="sw_net">
+                <mxCell id="n2g" value="" style="group" parent="sw_net" connectable="0" vertex="1">
                     <mxGeometry x="80" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="n2g2" value="" style="group" connectable="0" vertex="1" parent="n2g">
+                <mxCell id="n2g2" value="" style="group" parent="n2g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="n2g3" value="" style="group" connectable="0" vertex="1" parent="n2g2">
+                <mxCell id="n2g3" value="" style="group" parent="n2g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="n2s" value="Client&lt;br&gt;DHCP&lt;br&gt;Auto IP" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="n2g3">
+                <mxCell id="n2s" value="Client&lt;br&gt;DHCP&lt;br&gt;Auto IP" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="n2g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="n2f" value="LwIP" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="n2g3">
+                <mxCell id="n2f" value="LwIP" style="rounded=0;whiteSpace=wrap;html=1;" parent="n2g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="n2n" value="DHCP Client" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="n2g2">
+                <mxCell id="n2n" value="DHCP Client" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="n2g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="n2q" value="x2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="n2g">
+                <mxCell id="n2q" value="x2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="n2g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <!-- Ethernet PHY Driver -->
-                <mxCell id="n3g" value="" style="group" connectable="0" vertex="1" parent="sw_net">
+                <mxCell id="n3g" value="" style="group" parent="sw_net" connectable="0" vertex="1">
                     <mxGeometry x="150" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="n3g2" value="" style="group" connectable="0" vertex="1" parent="n3g">
+                <mxCell id="n3g2" value="" style="group" parent="n3g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="n3g3" value="" style="group" connectable="0" vertex="1" parent="n3g2">
+                <mxCell id="n3g3" value="" style="group" parent="n3g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="n3s" value="Driver&lt;br&gt;ETH PHY&lt;br&gt;LAN8742" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="n3g3">
+                <mxCell id="n3s" value="Driver&lt;br&gt;ETH PHY&lt;br&gt;RMII" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="n3g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="n3f" value="RMII / HAL" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="n3g3">
+                <mxCell id="n3f" value="HAL / RMII" style="rounded=0;whiteSpace=wrap;html=1;" parent="n3g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="n3n" value="ETH Driver" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="n3g2">
+                <mxCell id="n3n" value="ETH Driver" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="n3g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="n3q" value="x2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="n3g">
+                <mxCell id="n3q" value="x2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="n3g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <!-- Touch Screen / HMI -->
-                <mxCell id="n4g" value="" style="group" connectable="0" vertex="1" parent="sw_net">
+                <mxCell id="n4g" value="" style="group" parent="sw_net" connectable="0" vertex="1">
                     <mxGeometry x="220" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="n4g2" value="" style="group" connectable="0" vertex="1" parent="n4g">
+                <mxCell id="n4g2" value="" style="group" parent="n4g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="n4g3" value="" style="group" connectable="0" vertex="1" parent="n4g2">
+                <mxCell id="n4g3" value="" style="group" parent="n4g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="n4s" value="Serial&lt;br&gt;HMI&lt;br&gt;Display" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="n4g3">
+                <mxCell id="n4s" value="Driver&lt;br&gt;USB&lt;br&gt;CDC / VCP" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="n4g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="n4f" value="UART" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="n4g3">
+                <mxCell id="n4f" value="HAL USB" style="rounded=0;whiteSpace=wrap;html=1;" parent="n4g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="n4n" value="Touch Screen" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="n4g2">
+                <mxCell id="n4n" value="USB Driver" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="n4g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="n4q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="n4g">
+                <mxCell id="n4q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="n4g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
 
                 <!-- ==================== ROW 3 ==================== -->
 
                 <!-- ΑΣΦΑΛΕΙΑ / RBAC -->
-                <mxCell id="sw_sec" value="Ασφάλεια / RBAC" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="20" y="550" width="380" height="200" as="geometry"/>
+                <mxCell id="sw_sec" value="Ασφάλεια / RBAC" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="530" width="360" height="190" as="geometry"/>
                 </mxCell>
-                <!-- Secure Boot -->
-                <mxCell id="sc1g" value="" style="group" connectable="0" vertex="1" parent="sw_sec">
+                <mxCell id="sc1g" value="" style="group" parent="sw_sec" connectable="0" vertex="1">
                     <mxGeometry x="10" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc1g2" value="" style="group" connectable="0" vertex="1" parent="sc1g">
+                <mxCell id="sc1g2" value="" style="group" parent="sc1g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc1g3" value="" style="group;fillColor=#f8cecc;strokeColor=#b85450;" connectable="0" vertex="1" parent="sc1g2">
+                <mxCell id="sc1g3" value="" style="group;fillColor=#f8cecc;strokeColor=#b85450;" parent="sc1g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc1s" value="Module&lt;br&gt;Secure&lt;br&gt;Boot" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="sc1g3">
+                <mxCell id="sc1s" value="Module&lt;br&gt;Secure&lt;br&gt;Boot" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" parent="sc1g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc1f" value="HW OTP" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="sc1g3">
+                <mxCell id="sc1f" value="HW OTP" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="sc1g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc1n" value="Secure Boot" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="sc1g2">
+                <mxCell id="sc1n" value="Secure Boot" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="sc1g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc1q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="sc1g">
+                <mxCell id="sc1q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="sc1g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <!-- Bootloader -->
-                <mxCell id="sc2g" value="" style="group" connectable="0" vertex="1" parent="sw_sec">
+                <mxCell id="sc2g" value="" style="group" parent="sw_sec" connectable="0" vertex="1">
                     <mxGeometry x="80" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc2g2" value="" style="group" connectable="0" vertex="1" parent="sc2g">
+                <mxCell id="sc2g2" value="" style="group" parent="sc2g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc2g3" value="" style="group;fillColor=#f8cecc;strokeColor=#b85450;" connectable="0" vertex="1" parent="sc2g2">
+                <mxCell id="sc2g3" value="" style="group;fillColor=#f8cecc;strokeColor=#b85450;" parent="sc2g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc2s" value="Module&lt;br&gt;Bootloader&lt;br&gt;OTA" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="sc2g3">
+                <mxCell id="sc2s" value="Module&lt;br&gt;Bootloader&lt;br&gt;OTA" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" parent="sc2g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc2f" value="Flash" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="sc2g3">
+                <mxCell id="sc2f" value="Flash" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="sc2g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc2n" value="Bootloader" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="sc2g2">
+                <mxCell id="sc2n" value="Bootloader" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="sc2g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc2q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="sc2g">
+                <mxCell id="sc2q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="sc2g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <!-- RBAC Roles -->
-                <mxCell id="sc3g" value="" style="group" connectable="0" vertex="1" parent="sw_sec">
+                <mxCell id="sc3g" value="" style="group" parent="sw_sec" connectable="0" vertex="1">
                     <mxGeometry x="150" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc3g2" value="" style="group" connectable="0" vertex="1" parent="sc3g">
+                <mxCell id="sc3g2" value="" style="group" parent="sc3g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc3g3" value="" style="group;fillColor=#f8cecc;strokeColor=#b85450;" connectable="0" vertex="1" parent="sc3g2">
+                <mxCell id="sc3g3" value="" style="group;fillColor=#f8cecc;strokeColor=#b85450;" parent="sc3g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc3s" value="Module&lt;br&gt;Admin · User&lt;br&gt;Viewer" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="sc3g3">
+                <mxCell id="sc3s" value="Module&lt;br&gt;Admin · User&lt;br&gt;Viewer" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" parent="sc3g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc3f" value="4 Roles" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="sc3g3">
+                <mxCell id="sc3f" value="4 Roles" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="sc3g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc3n" value="RBAC Roles" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="sc3g2">
+                <mxCell id="sc3n" value="RBAC Roles" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="sc3g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc3q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="sc3g">
+                <mxCell id="sc3q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="sc3g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <!-- Session Auth -->
-                <mxCell id="sc4g" value="" style="group" connectable="0" vertex="1" parent="sw_sec">
+                <mxCell id="sc4g" value="" style="group" parent="sw_sec" connectable="0" vertex="1">
                     <mxGeometry x="220" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc4g2" value="" style="group" connectable="0" vertex="1" parent="sc4g">
+                <mxCell id="sc4g2" value="" style="group" parent="sc4g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc4g3" value="" style="group;fillColor=#f8cecc;strokeColor=#b85450;" connectable="0" vertex="1" parent="sc4g2">
+                <mxCell id="sc4g3" value="" style="group;fillColor=#f8cecc;strokeColor=#b85450;" parent="sc4g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc4s" value="Module&lt;br&gt;Session&lt;br&gt;Token" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="sc4g3">
+                <mxCell id="sc4s" value="Module&lt;br&gt;Session&lt;br&gt;Token" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" parent="sc4g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc4f" value="RAM / RTC" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="sc4g3">
+                <mxCell id="sc4f" value="RAM / RTC" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="sc4g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc4n" value="Session Auth" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="sc4g2">
+                <mxCell id="sc4n" value="Session Auth" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="sc4g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc4q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="sc4g">
+                <mxCell id="sc4q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="sc4g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <!-- HAL / STM32 BSP -->
-                <mxCell id="sc5g" value="" style="group" connectable="0" vertex="1" parent="sw_sec">
+                <mxCell id="sc5g" value="" style="group" parent="sw_sec" connectable="0" vertex="1">
                     <mxGeometry x="290" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc5g2" value="" style="group" connectable="0" vertex="1" parent="sc5g">
+                <mxCell id="sc5g2" value="" style="group" parent="sc5g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc5g3" value="" style="group" connectable="0" vertex="1" parent="sc5g2">
+                <mxCell id="sc5g3" value="" style="group" parent="sc5g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc5s" value="Library&lt;br&gt;HAL&lt;br&gt;BSP" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="sc5g3">
+                <mxCell id="sc5s" value="Library&lt;br&gt;HAL&lt;br&gt;BSP" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="sc5g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc5f" value="STM32 HAL" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="sc5g3">
+                <mxCell id="sc5f" value="STM32 HAL" style="rounded=0;whiteSpace=wrap;html=1;" parent="sc5g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc5n" value="HAL / BSP" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="sc5g2">
+                <mxCell id="sc5n" value="HAL / BSP" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="sc5g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="sc5q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="sc5g">
+                <mxCell id="sc5q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="sc5g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
 
                 <!-- ΕΠΙΚΟΙΝΩΝΙΑ ΠΕΔΙΟΥ -->
-                <mxCell id="sw_field" value="Επικοινωνία Πεδίου" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="410" y="550" width="230" height="200" as="geometry"/>
+                <mxCell id="sw_field" value="Επικοινωνία Πεδίου" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="530" width="160" height="190" as="geometry"/>
                 </mxCell>
-                <!-- Modbus RTU Bus A -->
-                <mxCell id="f1g" value="" style="group" connectable="0" vertex="1" parent="sw_field">
+                <mxCell id="f1g" value="" style="group" parent="sw_field" connectable="0" vertex="1">
                     <mxGeometry x="10" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="f1g2" value="" style="group" connectable="0" vertex="1" parent="f1g">
+                <mxCell id="f1g2" value="" style="group" parent="f1g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="f1g3" value="" style="group;fillColor=#ffe6cc;strokeColor=#d79b00;" connectable="0" vertex="1" parent="f1g2">
+                <mxCell id="f1g3" value="" style="group;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="f1g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="f1s" value="Driver&lt;br&gt;Modbus&lt;br&gt;Master" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="f1g3">
+                <mxCell id="f1s" value="Driver&lt;br&gt;Modbus&lt;br&gt;Master" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="f1g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="f1f" value="RS-485 ①" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="f1g3">
+                <mxCell id="f1f" value="RS-485 ①" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="f1g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="f1n" value="Bus A" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;" vertex="1" parent="f1g2">
+                <mxCell id="f1n" value="Modbus Bus A" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="f1g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="f1q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="f1g">
+                <mxCell id="f1q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="f1g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <!-- Modbus RTU Bus B -->
-                <mxCell id="f2g" value="" style="group" connectable="0" vertex="1" parent="sw_field">
+                <mxCell id="f2g" value="" style="group" parent="sw_field" connectable="0" vertex="1">
                     <mxGeometry x="80" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="f2g2" value="" style="group" connectable="0" vertex="1" parent="f2g">
+                <mxCell id="f2g2" value="" style="group" parent="f2g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="f2g3" value="" style="group;fillColor=#ffe6cc;strokeColor=#d79b00;" connectable="0" vertex="1" parent="f2g2">
+                <mxCell id="f2g3" value="" style="group;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="f2g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="f2s" value="Driver&lt;br&gt;Modbus&lt;br&gt;Master" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="f2g3">
+                <mxCell id="f2s" value="Driver&lt;br&gt;Modbus&lt;br&gt;Master" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="f2g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="f2f" value="RS-485 ②" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="f2g3">
+                <mxCell id="f2f" value="RS-485 ②" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="f2g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="f2n" value="Bus B" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;" vertex="1" parent="f2g2">
+                <mxCell id="f2n" value="Modbus Bus B" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="f2g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="f2q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="f2g">
-                    <mxGeometry y="120" width="60" height="20" as="geometry"/>
-                </mxCell>
-                <!-- SPI Flash Driver -->
-                <mxCell id="f3g" value="" style="group" connectable="0" vertex="1" parent="sw_field">
-                    <mxGeometry x="150" y="30" width="60" height="140" as="geometry"/>
-                </mxCell>
-                <mxCell id="f3g2" value="" style="group" connectable="0" vertex="1" parent="f3g">
-                    <mxGeometry width="60" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="f3g3" value="" style="group;fillColor=#d5e8d4;strokeColor=#82b366;" connectable="0" vertex="1" parent="f3g2">
-                    <mxGeometry y="30" width="60" height="90" as="geometry"/>
-                </mxCell>
-                <mxCell id="f3s" value="Driver&lt;br&gt;SPI&lt;br&gt;Octo" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="f3g3">
-                    <mxGeometry width="60" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="f3f" value="HAL / DMA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="f3g3">
-                    <mxGeometry y="60" width="60" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="f3n" value="SPI Flash" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;" vertex="1" parent="f3g2">
-                    <mxGeometry width="60" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="f3q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="f3g">
+                <mxCell id="f2q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="f2g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
 
-                <!-- ΑΝΑΛΟΓΙΚΗ ΕΞΟΔΟΣ / DAC -->
-                <mxCell id="sw_dac" value="Αναλογική Έξοδος / DAC" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="650" y="550" width="500" height="200" as="geometry"/>
+                <!-- ΑΝΑΛΟΓΙΚΗ ΕΞΟΔΟΣ / DRIVERS -->
+                <mxCell id="sw_dac" value="Drivers Εξόδων" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="530" width="300" height="190" as="geometry"/>
                 </mxCell>
-                <!-- DAC 4-20mA / 0-20V -->
-                <mxCell id="da1g" value="" style="group" connectable="0" vertex="1" parent="sw_dac">
+                <mxCell id="da1g" value="" style="group" parent="sw_dac" connectable="0" vertex="1">
                     <mxGeometry x="10" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="da1g2" value="" style="group" connectable="0" vertex="1" parent="da1g">
+                <mxCell id="da1g2" value="" style="group" parent="da1g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="da1g3" value="" style="group;fillColor=#e1d5e7;strokeColor=#9673a6;" connectable="0" vertex="1" parent="da1g2">
+                <mxCell id="da1g3" value="" style="group;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="da1g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="da1s" value="Driver&lt;br&gt;DAC&lt;br&gt;4-20mA" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="da1g3">
+                <mxCell id="da1s" value="Driver&lt;br&gt;DAC&lt;br&gt;4-20mA" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="da1g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="da1f" value="SPI / HAL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="da1g3">
+                <mxCell id="da1f" value="SPI / HAL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="da1g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="da1n" value="DAC Driver" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="da1g2">
+                <mxCell id="da1n" value="DAC Driver" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="da1g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="da1q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="da1g">
+                <mxCell id="da1q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="da1g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <!-- PT100 / RTD Driver -->
-                <mxCell id="da2g" value="" style="group" connectable="0" vertex="1" parent="sw_dac">
+                <mxCell id="da2g" value="" style="group" parent="sw_dac" connectable="0" vertex="1">
                     <mxGeometry x="80" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="da2g2" value="" style="group" connectable="0" vertex="1" parent="da2g">
+                <mxCell id="da2g2" value="" style="group" parent="da2g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="da2g3" value="" style="group;fillColor=#e1d5e7;strokeColor=#9673a6;" connectable="0" vertex="1" parent="da2g2">
+                <mxCell id="da2g3" value="" style="group;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="da2g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="da2s" value="Driver&lt;br&gt;PT100&lt;br&gt;RTD" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="da2g3">
+                <mxCell id="da2s" value="Driver&lt;br&gt;PT100&lt;br&gt;RTD" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="da2g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="da2f" value="ADC / HAL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="da2g3">
+                <mxCell id="da2f" value="ADC / HAL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="da2g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="da2n" value="RTD Driver" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="da2g2">
+                <mxCell id="da2n" value="RTD Driver" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="da2g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="da2q" value="x2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="da2g">
+                <mxCell id="da2q" value="x2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="da2g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <!-- Output Protection -->
-                <mxCell id="da3g" value="" style="group" connectable="0" vertex="1" parent="sw_dac">
+                <mxCell id="da3g" value="" style="group" parent="sw_dac" connectable="0" vertex="1">
                     <mxGeometry x="150" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="da3g2" value="" style="group" connectable="0" vertex="1" parent="da3g">
+                <mxCell id="da3g2" value="" style="group" parent="da3g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="da3g3" value="" style="group;fillColor=#e1d5e7;strokeColor=#9673a6;" connectable="0" vertex="1" parent="da3g2">
+                <mxCell id="da3g3" value="" style="group;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="da3g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="da3s" value="Module&lt;br&gt;Output&lt;br&gt;Protect" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="da3g3">
+                <mxCell id="da3s" value="Module&lt;br&gt;Output&lt;br&gt;Protect" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="da3g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="da3f" value="HW + SW" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="da3g3">
+                <mxCell id="da3f" value="HW + SW" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="da3g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="da3n" value="Out Protect" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="da3g2">
+                <mxCell id="da3n" value="Out Protect" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="da3g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="da3q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="da3g">
+                <mxCell id="da3q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="da3g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <!-- USB Debug Driver -->
-                <mxCell id="da4g" value="" style="group" connectable="0" vertex="1" parent="sw_dac">
+                <mxCell id="da4g" value="" style="group" parent="sw_dac" connectable="0" vertex="1">
                     <mxGeometry x="220" y="30" width="60" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="da4g2" value="" style="group" connectable="0" vertex="1" parent="da4g">
+                <mxCell id="da4g2" value="" style="group" parent="da4g" connectable="0" vertex="1">
                     <mxGeometry width="60" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="da4g3" value="" style="group" connectable="0" vertex="1" parent="da4g2">
+                <mxCell id="da4g3" value="" style="group;fillColor=#f8cecc;strokeColor=#b85450;" parent="da4g2" connectable="0" vertex="1">
                     <mxGeometry y="30" width="60" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="da4s" value="Driver&lt;br&gt;USB&lt;br&gt;CDC/VCP" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="da4g3">
+                <mxCell id="da4s" value="Task&lt;br&gt;Alarm&lt;br&gt;Manager" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" parent="da4g3" vertex="1">
                     <mxGeometry width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="da4f" value="HAL USB" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="da4g3">
+                <mxCell id="da4f" value="MQTT / HMI" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="da4g3" vertex="1">
                     <mxGeometry y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="da4n" value="USB Driver" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="da4g2">
+                <mxCell id="da4n" value="Alarm Mgr" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" parent="da4g2" vertex="1">
                     <mxGeometry width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="da4q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="da4g">
+                <mxCell id="da4q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" parent="da4g" vertex="1">
                     <mxGeometry y="120" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <!-- Batch / Process Data -->
-                <mxCell id="da5g" value="" style="group" connectable="0" vertex="1" parent="sw_dac">
-                    <mxGeometry x="290" y="30" width="60" height="140" as="geometry"/>
+
+                <!-- ==================== LEGEND ==================== -->
+                <mxCell id="leg_box" value="Συντομογραφίες" style="swimlane;whiteSpace=wrap;html=1;startSize=25;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="870" y="110" width="280" height="610" as="geometry"/>
                 </mxCell>
-                <mxCell id="da5g2" value="" style="group" connectable="0" vertex="1" parent="da5g">
-                    <mxGeometry width="60" height="120" as="geometry"/>
+                <mxCell id="leg_text" value="&lt;table style=&quot;font-size:10px;font-family:Courier New,monospace;width:100%;&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;ADC&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Analog-to-Digital Converter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;BSP&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Board Support Package&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;CDC&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Communications Device Class&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;DAC&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Digital-to-Analog Converter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;DHCP&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Dynamic Host Config. Protocol&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;DMA&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Direct Memory Access&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;FOTA&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Firmware Over-the-Air Update&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;FSM&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Finite State Machine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;FTP&lt;/b&gt;&lt;/td&gt;&lt;td&gt;File Transfer Protocol&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;HAL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Hardware Abstraction Layer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;IPC&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Inter-Process Communication&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;ISR&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Interrupt Service Routine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;LwIP&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Lightweight IP (TCP/IP stack)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;MQTT&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Message Queuing Telemetry Transport&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;NC&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Normally Closed (contact)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;OTA&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Over-the-Air (update)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;OTP&lt;/b&gt;&lt;/td&gt;&lt;td&gt;One-Time Programmable (HW)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;RBAC&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Role-Based Access Control&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;RMII&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Reduced Media Indep. Interface&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;RTD&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Resistance Temperature Detector&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;RTU&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Remote Terminal Unit (Modbus)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SCP&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Secure Copy Protocol&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SPI&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Serial Peripheral Interface&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;TIM&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Timer peripheral (STM32)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;VCP&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Virtual COM Port (USB CDC)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;" parent="leg_box" vertex="1">
+                    <mxGeometry x="5" y="28" width="268" height="575" as="geometry"/>
                 </mxCell>
-                <mxCell id="da5g3" value="" style="group;fillColor=#dae8fc;strokeColor=#6c8ebf;" connectable="0" vertex="1" parent="da5g2">
-                    <mxGeometry y="30" width="60" height="90" as="geometry"/>
+
+                <!-- ==================== TITLE BLOCK (bottom) ==================== -->
+                <mxCell id="t1" value="&lt;font style=&quot;font-size:16px;&quot;&gt;Διάγραμμα Firmware&lt;br&gt;Λογισμικό Πλακέτας&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=18;fillColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="750" width="210" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="da5s" value="Module&lt;br&gt;Batch&lt;br&gt;Records" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="da5g3">
-                    <mxGeometry width="60" height="60" as="geometry"/>
+                <mxCell id="t2" value="OliveCrab — Modules, Tasks &amp; Drivers" style="whiteSpace=wrap;html=1;fontSize=22;fillColor=#ffffff;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="300" y="750" width="680" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="da5f" value="LittleFS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="da5g3">
-                    <mxGeometry y="60" width="60" height="30" as="geometry"/>
+                <mxCell id="t3" value="" style="whiteSpace=wrap;html=1;fontSize=18;fillColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="980" y="730" width="140" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="da5n" value="Batch Data" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="da5g2">
-                    <mxGeometry width="60" height="30" as="geometry"/>
+                <mxCell id="tv1" value="Έκδοση:" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="990" y="740" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="da5q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="da5g">
-                    <mxGeometry y="120" width="60" height="20" as="geometry"/>
+                <mxCell id="tv2" value="Ημερομηνία:" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="990" y="760" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <!-- Alarm Manager -->
-                <mxCell id="da6g" value="" style="group" connectable="0" vertex="1" parent="sw_dac">
-                    <mxGeometry x="360" y="30" width="60" height="140" as="geometry"/>
+                <mxCell id="tv3" value="&lt;span style=&quot;font-size:10px;font-weight:700;&quot;&gt;31/5/2026&lt;/span&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1060" y="760" width="60" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="da6g2" value="" style="group" connectable="0" vertex="1" parent="da6g">
-                    <mxGeometry width="60" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="da6g3" value="" style="group;fillColor=#f8cecc;strokeColor=#b85450;" connectable="0" vertex="1" parent="da6g2">
-                    <mxGeometry y="30" width="60" height="90" as="geometry"/>
-                </mxCell>
-                <mxCell id="da6s" value="Task&lt;br&gt;Alarm&lt;br&gt;Manager" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="da6g3">
-                    <mxGeometry width="60" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="da6f" value="MQTT / HMI" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="da6g3">
-                    <mxGeometry y="60" width="60" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="da6n" value="Alarm Mgr" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="da6g2">
-                    <mxGeometry width="60" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="da6q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="da6g">
-                    <mxGeometry y="120" width="60" height="20" as="geometry"/>
+                <mxCell id="tv4" value="&lt;span style=&quot;font-size:10px;font-weight:700;&quot;&gt;1.0&lt;/span&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1060" y="742.5" width="60" height="15" as="geometry"/>
                 </mxCell>
 
             </root>
