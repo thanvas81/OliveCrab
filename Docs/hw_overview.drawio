@@ -1,0 +1,544 @@
+<mxfile host="65bd71144e">
+    <diagram name="Page-1" id="olivecrab-hw-overview">
+        <mxGraphModel dx="1554" dy="1147" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="t1" value="Διάγραμμα Hardware&lt;br&gt;Συνδέσεις Πλακέτας" style="whiteSpace=wrap;html=1;fontSize=18;fillColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="20" width="210" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="t2" value="OliveCrab — Φίσες, Σήματα &amp; Εξαρτήματα" style="whiteSpace=wrap;html=1;fontSize=22;fillColor=#ffffff;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="350" y="50" width="560" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="t3" value="Έκδοση" style="whiteSpace=wrap;html=1;fontSize=18;fillColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="920" y="20" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="t4" value="1.0" style="whiteSpace=wrap;html=1;fontSize=22;fillColor=#ffffff;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="920" y="50" width="90" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="sw_pwr" value="Τροφοδοσία" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="140" y="120" width="230" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="pwr1g" value="" style="group" connectable="0" vertex="1" parent="sw_pwr">
+                    <mxGeometry x="10" y="30" width="60" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="pwr1g2" value="" style="group" connectable="0" vertex="1" parent="pwr1g">
+                    <mxGeometry width="60" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="pwr1g3" value="" style="group" connectable="0" vertex="1" parent="pwr1g2">
+                    <mxGeometry y="30" width="60" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="pwr1s" value="Input&lt;br&gt;24V DC&lt;br&gt;Screw" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="pwr1g3">
+                    <mxGeometry width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="pwr1f" value="PSU" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="pwr1g3">
+                    <mxGeometry y="60" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="pwr1n" value="24V DC IN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;" vertex="1" parent="pwr1g2">
+                    <mxGeometry width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="pwr1q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="pwr1g">
+                    <mxGeometry y="120" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="pwr2g" value="" style="group" connectable="0" vertex="1" parent="sw_pwr">
+                    <mxGeometry x="80" y="30" width="60" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="pwr2g2" value="" style="group" connectable="0" vertex="1" parent="pwr2g">
+                    <mxGeometry width="60" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="pwr2g3" value="" style="group;fillColor=#fff2cc;strokeColor=#d6b656;" connectable="0" vertex="1" parent="pwr2g2">
+                    <mxGeometry y="30" width="60" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="pwr2s" value="DC-DC&lt;br&gt;ISO 1W&lt;br&gt;Module" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="pwr2g3">
+                    <mxGeometry width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="pwr2f" value="3.3V · 5V" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="pwr2g3">
+                    <mxGeometry y="60" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="pwr2n" value="DC-DC ISO" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;" vertex="1" parent="pwr2g2">
+                    <mxGeometry width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="pwr2q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="pwr2g">
+                    <mxGeometry y="120" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="pwr3g" value="" style="group" connectable="0" vertex="1" parent="sw_pwr">
+                    <mxGeometry x="155" y="30" width="60" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="pwr3g2" value="" style="group" connectable="0" vertex="1" parent="pwr3g">
+                    <mxGeometry width="60" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="pwr3g3" value="" style="group;fillColor=#fff2cc;strokeColor=#d6b656;" connectable="0" vertex="1" parent="pwr3g2">
+                    <mxGeometry y="30" width="60" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="pwr3s" value="Cap&lt;br&gt;Early&lt;br&gt;Warning" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="pwr3g3">
+                    <mxGeometry width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="pwr3f" value="Circuit" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="pwr3g3">
+                    <mxGeometry y="60" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="pwr3n" value="CAP WARN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;" vertex="1" parent="pwr3g2">
+                    <mxGeometry width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="pwr3q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="pwr3g">
+                    <mxGeometry y="120" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="sw_ain" value="Αναλογικές Είσοδοι" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="390" y="120" width="450" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai1g" value="" style="group" connectable="0" vertex="1" parent="sw_ain">
+                    <mxGeometry x="10" y="30" width="60" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai1g2" value="" style="group" connectable="0" vertex="1" parent="ai1g">
+                    <mxGeometry width="60" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai1g3" value="" style="group;fillColor=#d5e8d4;strokeColor=#82b366;" connectable="0" vertex="1" parent="ai1g2">
+                    <mxGeometry y="30" width="60" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai1s" value="Input&lt;br&gt;4-20mA&lt;br&gt;Diff." style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="ai1g3">
+                    <mxGeometry width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai1f" value="Screw Term." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="ai1g3">
+                    <mxGeometry y="60" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai1n" value="Δυναμο-κυψέλη ①" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="ai1g2">
+                    <mxGeometry width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai1q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="ai1g">
+                    <mxGeometry y="120" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai2g" value="" style="group" connectable="0" vertex="1" parent="sw_ain">
+                    <mxGeometry x="80" y="30" width="60" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai2g2" value="" style="group" connectable="0" vertex="1" parent="ai2g">
+                    <mxGeometry width="60" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai2g3" value="" style="group;fillColor=#d5e8d4;strokeColor=#82b366;" connectable="0" vertex="1" parent="ai2g2">
+                    <mxGeometry y="30" width="60" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai2s" value="Input&lt;br&gt;4-20mA&lt;br&gt;Diff." style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="ai2g3">
+                    <mxGeometry width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai2f" value="Screw Term." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="ai2g3">
+                    <mxGeometry y="60" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai2n" value="Δυναμο-κυψέλη ②" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="ai2g2">
+                    <mxGeometry width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai2q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="ai2g">
+                    <mxGeometry y="120" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai3g" value="" style="group" connectable="0" vertex="1" parent="sw_ain">
+                    <mxGeometry x="150" y="30" width="60" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai3g2" value="" style="group" connectable="0" vertex="1" parent="ai3g">
+                    <mxGeometry width="60" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai3g3" value="" style="group;fillColor=#d5e8d4;strokeColor=#82b366;" connectable="0" vertex="1" parent="ai3g2">
+                    <mxGeometry y="30" width="60" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai3s" value="Input&lt;br&gt;4-20mA&lt;br&gt;Isolated" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="ai3g3">
+                    <mxGeometry width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai3f" value="Screw Term." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="ai3g3">
+                    <mxGeometry y="60" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai3n" value="Αισθ.&lt;br&gt;Στάθμης" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="ai3g2">
+                    <mxGeometry width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai3q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="ai3g">
+                    <mxGeometry y="120" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai4g" value="" style="group" connectable="0" vertex="1" parent="sw_ain">
+                    <mxGeometry x="220" y="30" width="60" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai4g2" value="" style="group" connectable="0" vertex="1" parent="ai4g">
+                    <mxGeometry width="60" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai4g3" value="" style="group;fillColor=#d5e8d4;strokeColor=#82b366;" connectable="0" vertex="1" parent="ai4g2">
+                    <mxGeometry y="30" width="60" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai4s" value="Input&lt;br&gt;4-20mA&lt;br&gt;Isolated" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="ai4g3">
+                    <mxGeometry width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai4f" value="Screw Term." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="ai4g3">
+                    <mxGeometry y="60" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai4n" value="Αισθ.&lt;br&gt;Ιξώδους" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="ai4g2">
+                    <mxGeometry width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai4q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="ai4g">
+                    <mxGeometry y="120" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="pt1g" value="" style="group" connectable="0" vertex="1" parent="sw_ain">
+                    <mxGeometry x="310" y="30" width="60" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="pt1g2" value="" style="group" connectable="0" vertex="1" parent="pt1g">
+                    <mxGeometry width="60" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="pt1g3" value="" style="group;fillColor=#dae8fc;strokeColor=#6c8ebf;" connectable="0" vertex="1" parent="pt1g2">
+                    <mxGeometry y="30" width="60" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="pt1s" value="Input&lt;br&gt;PT100&lt;br&gt;RTD 3W" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="pt1g3">
+                    <mxGeometry width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="pt1f" value="0–90 °C" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="pt1g3">
+                    <mxGeometry y="60" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="pt1n" value="Θερμοκρ.&lt;br&gt;Λαδιού" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="pt1g2">
+                    <mxGeometry width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="pt1q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="pt1g">
+                    <mxGeometry y="120" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="pt2g" value="" style="group" connectable="0" vertex="1" parent="sw_ain">
+                    <mxGeometry x="380" y="30" width="60" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="pt2g2" value="" style="group" connectable="0" vertex="1" parent="pt2g">
+                    <mxGeometry width="60" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="pt2g3" value="" style="group;fillColor=#dae8fc;strokeColor=#6c8ebf;" connectable="0" vertex="1" parent="pt2g2">
+                    <mxGeometry y="30" width="60" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="pt2s" value="Input&lt;br&gt;PT100&lt;br&gt;RTD 3W" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="pt2g3">
+                    <mxGeometry width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="pt2f" value="0–90 °C" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="pt2g3">
+                    <mxGeometry y="60" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="pt2n" value="Θερμοκρ.&lt;br&gt;Νερού" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="pt2g2">
+                    <mxGeometry width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="pt2q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="pt2g">
+                    <mxGeometry y="120" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="sw_din" value="Ψηφιακές Είσοδοι" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="850" y="120" width="180" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="di1g" value="" style="group" connectable="0" vertex="1" parent="sw_din">
+                    <mxGeometry x="10" y="30" width="60" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="di1g2" value="" style="group" connectable="0" vertex="1" parent="di1g">
+                    <mxGeometry width="60" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="di1g3" value="" style="group" connectable="0" vertex="1" parent="di1g2">
+                    <mxGeometry y="30" width="60" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="di1s" value="Input&lt;br&gt;24VDC&lt;br&gt;Opto ISO" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="di1g3">
+                    <mxGeometry width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="di1f" value="Screw Term." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="di1g3">
+                    <mxGeometry y="60" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="di1n" value="Opto IN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;" vertex="1" parent="di1g2">
+                    <mxGeometry width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="di1q" value="x4" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="di1g">
+                    <mxGeometry y="120" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="di2g" value="" style="group" connectable="0" vertex="1" parent="sw_din">
+                    <mxGeometry x="100" y="30" width="60" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="di2g2" value="" style="group" connectable="0" vertex="1" parent="di2g">
+                    <mxGeometry width="60" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="di2g3" value="" style="group;fillColor=#f8cecc;strokeColor=#b85450;" connectable="0" vertex="1" parent="di2g2">
+                    <mxGeometry y="30" width="60" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="di2s" value="Input&lt;br&gt;HW NC&lt;br&gt;Contact" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="di2g3">
+                    <mxGeometry width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="di2f" value="Screw Term." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="di2g3">
+                    <mxGeometry y="60" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="di2n" value="E-STOP" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;" vertex="1" parent="di2g2">
+                    <mxGeometry width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="di2q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="di2g">
+                    <mxGeometry y="120" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="sw_sol" value="Βαλβίδες Σωληνοειδών" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="140" y="310" width="160" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="sl1g" value="" style="group" connectable="0" vertex="1" parent="sw_sol">
+                    <mxGeometry x="10" y="30" width="60" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="sl1g2" value="" style="group" connectable="0" vertex="1" parent="sl1g">
+                    <mxGeometry width="60" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="sl1g3" value="" style="group;fillColor=#d5e8d4;strokeColor=#82b366;" connectable="0" vertex="1" parent="sl1g2">
+                    <mxGeometry y="30" width="60" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="sl1s" value="Output&lt;br&gt;24VDC&lt;br&gt;1A" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="sl1g3">
+                    <mxGeometry width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="sl1f" value="Curr Sense" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="sl1g3">
+                    <mxGeometry y="60" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="sl1n" value="Βαλβίδα Πλήρωσης" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="sl1g2">
+                    <mxGeometry width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="sl1q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="sl1g">
+                    <mxGeometry y="120" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="sl2g" value="" style="group" connectable="0" vertex="1" parent="sw_sol">
+                    <mxGeometry x="90" y="30" width="60" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="sl2g2" value="" style="group" connectable="0" vertex="1" parent="sl2g">
+                    <mxGeometry width="60" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="sl2g3" value="" style="group;fillColor=#d5e8d4;strokeColor=#82b366;" connectable="0" vertex="1" parent="sl2g2">
+                    <mxGeometry y="30" width="60" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="sl2s" value="Output&lt;br&gt;24VDC&lt;br&gt;1A" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="sl2g3">
+                    <mxGeometry width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="sl2f" value="Curr Sense" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="sl2g3">
+                    <mxGeometry y="60" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="sl2n" value="Βαλβίδα Εκκένωσης" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="sl2g2">
+                    <mxGeometry width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="sl2q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="sl2g">
+                    <mxGeometry y="120" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="sw_oc" value="Έξοδοι Κινητήρων" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" vertex="1" parent="1">
+                    <mxGeometry x="310" y="310" width="100" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="oc1g" value="" style="group" connectable="0" vertex="1" parent="sw_oc">
+                    <mxGeometry x="20" y="30" width="60" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="oc1g2" value="" style="group" connectable="0" vertex="1" parent="oc1g">
+                    <mxGeometry width="60" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="oc1g3" value="" style="group;fillColor=#ffe6cc;strokeColor=#d79b00;" connectable="0" vertex="1" parent="oc1g2">
+                    <mxGeometry y="30" width="60" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="oc1s" value="Output&lt;br&gt;OC&lt;br&gt;Opto ISO" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="oc1g3">
+                    <mxGeometry width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="oc1f" value="Screw Term." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="oc1g3">
+                    <mxGeometry y="60" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="oc1n" value="Opto OUT" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;" vertex="1" parent="oc1g2">
+                    <mxGeometry width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="oc1q" value="x4" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="oc1g">
+                    <mxGeometry y="120" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="sw_pwm" value="PWM &amp; Αναλογική Έξοδος" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="420" y="310" width="250" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="pw1g" value="" style="group" connectable="0" vertex="1" parent="sw_pwm">
+                    <mxGeometry x="10" y="30" width="80" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="pw1g2" value="" style="group" connectable="0" vertex="1" parent="pw1g">
+                    <mxGeometry width="80" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="pw1g3" value="" style="group;fillColor=#f8cecc;strokeColor=#b85450;" connectable="0" vertex="1" parent="pw1g2">
+                    <mxGeometry y="30" width="60" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="pw1s" value="Output&lt;br&gt;24VDC&lt;br&gt;2A PWM" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="pw1g3">
+                    <mxGeometry width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="pw1f" value="RGB · Screw" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="pw1g3">
+                    <mxGeometry y="60" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="pw1n" value="MOSFET PWM&lt;br&gt;Μαλακτήρας" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="pw1g2">
+                    <mxGeometry x="-10" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="pw1q" value="x3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="pw1g">
+                    <mxGeometry y="120" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="pw2g" value="" style="group" connectable="0" vertex="1" parent="sw_pwm">
+                    <mxGeometry x="90" y="30" width="70" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="pw2g2" value="" style="group" connectable="0" vertex="1" parent="pw2g">
+                    <mxGeometry width="70" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="pw2g3" value="" style="group;fillColor=#e1d5e7;strokeColor=#9673a6;" connectable="0" vertex="1" parent="pw2g2">
+                    <mxGeometry y="30" width="60" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="pw2s" value="Output&lt;br&gt;24VDC&lt;br&gt;6-7A" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="pw2g3">
+                    <mxGeometry width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="pw2f" value="Screw Term." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="pw2g3">
+                    <mxGeometry y="60" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="pw2n" value="PWR MOSFET&lt;br&gt;Προβολέας" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" vertex="1" parent="pw2g2">
+                    <mxGeometry x="-5" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="pw2q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="pw2g">
+                    <mxGeometry y="120" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="pw3g" value="" style="group" connectable="0" vertex="1" parent="sw_pwm">
+                    <mxGeometry x="170" y="30" width="70" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="pw3g2" value="" style="group" connectable="0" vertex="1" parent="pw3g">
+                    <mxGeometry width="70" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="pw3g3" value="" style="group;fillColor=#d5e8d4;strokeColor=#82b366;" connectable="0" vertex="1" parent="pw3g2">
+                    <mxGeometry y="30" width="70" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="pw3s" value="Output&lt;br&gt;4-20mA&lt;br&gt;0-20V" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="pw3g3">
+                    <mxGeometry width="70" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="pw3f" value="Configurable" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="pw3g3">
+                    <mxGeometry y="60" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="pw3n" value="Analog OUT" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;" vertex="1" parent="pw3g2">
+                    <mxGeometry width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="pw3q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="pw3g">
+                    <mxGeometry y="120" width="70" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="sw_mcu" value="Κύρια Εξαρτήματα" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="680" y="310" width="410" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="mcu1" value="MCU&lt;br&gt;&lt;b&gt;STM32H7&lt;br&gt;Dual Core&lt;/b&gt;&lt;br&gt;LQFP176 / 208" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="sw_mcu">
+                    <mxGeometry x="10" y="40" width="130" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="mcu2" value="SPI Flash&lt;br&gt;&lt;b&gt;8 MB&lt;/b&gt;&lt;br&gt;Octo / SOIC-8" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="sw_mcu">
+                    <mxGeometry x="155" y="40" width="120" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="mcu3" value="RTC Chip&lt;br&gt;+ CR2032&lt;br&gt;Holder" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="sw_mcu">
+                    <mxGeometry x="10" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="mcu4" value="ETH PHY&lt;br&gt;&lt;b&gt;LAN8742&lt;/b&gt;&lt;br&gt;×2" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="sw_mcu">
+                    <mxGeometry x="290" y="40" width="110" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="mcu5" value="SD Card&lt;br&gt;Slot&lt;br&gt;&lt;i&gt;variant&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="sw_mcu">
+                    <mxGeometry x="155" y="120" width="110" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="sw_com" value="Επικοινωνία — Φίσες &amp; Σύνδεσμοι" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="130" y="520" width="730" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="eth1g" value="" style="group" connectable="0" vertex="1" parent="sw_com">
+                    <mxGeometry x="10" y="30" width="80" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="eth1g2" value="" style="group" connectable="0" vertex="1" parent="eth1g">
+                    <mxGeometry width="80" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="eth1g3" value="" style="group" connectable="0" vertex="1" parent="eth1g2">
+                    <mxGeometry y="30" width="80" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="eth1s" value="ETH&lt;br&gt;RJ45&lt;br&gt;100 Mbps" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="eth1g3">
+                    <mxGeometry width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="eth1f" value="Connector" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="eth1g3">
+                    <mxGeometry y="60" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="eth1n" value="Ethernet ①" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;" vertex="1" parent="eth1g2">
+                    <mxGeometry width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="eth1q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="eth1g">
+                    <mxGeometry y="120" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="eth2g" value="" style="group" connectable="0" vertex="1" parent="sw_com">
+                    <mxGeometry x="100" y="30" width="80" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="eth2g2" value="" style="group" connectable="0" vertex="1" parent="eth2g">
+                    <mxGeometry width="80" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="eth2g3" value="" style="group" connectable="0" vertex="1" parent="eth2g2">
+                    <mxGeometry y="30" width="80" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="eth2s" value="ETH&lt;br&gt;RJ45&lt;br&gt;100 Mbps" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="eth2g3">
+                    <mxGeometry width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="eth2f" value="Connector" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="eth2g3">
+                    <mxGeometry y="60" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="eth2n" value="Ethernet ②" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;" vertex="1" parent="eth2g2">
+                    <mxGeometry width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="eth2q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="eth2g">
+                    <mxGeometry y="120" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="usb1g" value="" style="group" connectable="0" vertex="1" parent="sw_com">
+                    <mxGeometry x="200" y="30" width="80" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="usb1g2" value="" style="group" connectable="0" vertex="1" parent="usb1g">
+                    <mxGeometry width="80" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="usb1g3" value="" style="group" connectable="0" vertex="1" parent="usb1g2">
+                    <mxGeometry y="30" width="80" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="usb1s" value="USB&lt;br&gt;Micro-B&lt;br&gt;Connector" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="usb1g3">
+                    <mxGeometry width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="usb1f" value="Debug · Flash" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="usb1g3">
+                    <mxGeometry y="60" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="usb1n" value="USB" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;" vertex="1" parent="usb1g2">
+                    <mxGeometry width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="usb1q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="usb1g">
+                    <mxGeometry y="120" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="bt1g" value="" style="group" connectable="0" vertex="1" parent="sw_com">
+                    <mxGeometry x="300" y="30" width="80" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="bt1g2" value="" style="group" connectable="0" vertex="1" parent="bt1g">
+                    <mxGeometry width="80" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="bt1g3" value="" style="group" connectable="0" vertex="1" parent="bt1g2">
+                    <mxGeometry y="30" width="80" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="bt1s" value="BOOT0&lt;br&gt;2-pin&lt;br&gt;Header" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="bt1g3">
+                    <mxGeometry width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="bt1f" value="Bootloader" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="bt1g3">
+                    <mxGeometry y="60" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="bt1n" value="BOOT0" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;" vertex="1" parent="bt1g2">
+                    <mxGeometry width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="bt1q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="bt1g">
+                    <mxGeometry y="120" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="rs1g" value="" style="group" connectable="0" vertex="1" parent="sw_com">
+                    <mxGeometry x="420" y="30" width="140" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="rs1g2" value="" style="group" connectable="0" vertex="1" parent="rs1g">
+                    <mxGeometry width="140" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="rs1g3" value="" style="group" connectable="0" vertex="1" parent="rs1g2">
+                    <mxGeometry y="30" width="140" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="rs1s" value="RS-485&lt;br&gt;Half-Duplex&lt;br&gt;Screw Term." style="whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="rs1g3">
+                    <mxGeometry width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="rs1f" value="A · B · GND" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="rs1g3">
+                    <mxGeometry y="60" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="rs1n" value="RS-485 PORT ①" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;" vertex="1" parent="rs1g2">
+                    <mxGeometry width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="rs1q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="rs1g">
+                    <mxGeometry y="120" width="140" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="rs2g" value="" style="group" connectable="0" vertex="1" parent="sw_com">
+                    <mxGeometry x="580" y="30" width="140" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="rs2g2" value="" style="group" connectable="0" vertex="1" parent="rs2g">
+                    <mxGeometry width="140" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="rs2g3" value="" style="group" connectable="0" vertex="1" parent="rs2g2">
+                    <mxGeometry y="30" width="140" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="rs2s" value="RS-485&lt;br&gt;Half-Duplex&lt;br&gt;Screw Term." style="whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="rs2g3">
+                    <mxGeometry width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="rs2f" value="A · B · GND" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="rs2g3">
+                    <mxGeometry y="60" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="rs2n" value="RS-485 PORT ②" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;" vertex="1" parent="rs2g2">
+                    <mxGeometry width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="rs2q" value="x1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=18;fontStyle=1" vertex="1" parent="rs2g">
+                    <mxGeometry y="120" width="140" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
