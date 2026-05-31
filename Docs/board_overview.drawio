@@ -1,0 +1,406 @@
+<mxfile host="65bd71144e">
+    <diagram id="olivecrab-board" name="OliveCrab Board Overview">
+        <mxGraphModel dx="1554" dy="1147" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="0" page="0" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="rounded=0;fillColor=#0c0e14;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="307.75" y="47" width="1149" height="696" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="OliveCrab — Main Controller Board  |  Top View" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=17;fontStyle=1;fontColor=#cfd8dc;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="350.5" y="73" width="771" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="" style="rounded=1;fillColor=#162916;strokeColor=#2e7d32;strokeWidth=3;arcSize=2;" parent="1" vertex="1">
+                    <mxGeometry x="332.75" y="104.5" width="811" height="580" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="rounded=1;fillColor=#0a1628;strokeColor=#1565c0;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="491.25" y="262" width="440" height="254" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="STM32H7  Dual Core" style="rounded=1;fillColor=#1565c0;strokeColor=none;fontColor=#e3f2fd;fontSize=13;fontStyle=1;fontFamily=Courier New;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="491.75" y="260" width="440" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="&lt;b&gt;Cortex-M7&lt;/b&gt;&lt;br/&gt;State Machines&lt;br/&gt;Web Server · RBAC&lt;br/&gt;MQTT · FTP/SCP&lt;br/&gt;OTA · Logger" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;fontSize=9;fontColor=#64b5f6;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="493.25" y="292" width="216" height="82" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="fillColor=#1e3a5f;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="711.25" y="290" width="1" height="88" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="&lt;b&gt;Cortex-M4&lt;/b&gt;&lt;br/&gt;Real-Time I/O&lt;br/&gt;ADC · PWM · UART&lt;br/&gt;Modbus RTU x2&lt;br/&gt;Safety · E-STOP" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;fontSize=9;fontColor=#64b5f6;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="713.25" y="292" width="216" height="82" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="fillColor=#1e3a5f;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="493.25" y="380" width="436" height="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="&lt;b&gt;SPI Octo Flash&lt;/b&gt;&lt;br/&gt;8 MB&lt;br/&gt;LittleFS · OTA&lt;br/&gt;FTP · SCP" style="rounded=1;fillColor=#0d2137;strokeColor=#0d47a1;strokeWidth=1;fontColor=#90caf9;fontSize=9;fontFamily=Courier New;align=center;verticalAlign=middle;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="508.25" y="386" width="122" height="58" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="&lt;b&gt;RTC + Coin Cell&lt;/b&gt;&lt;br/&gt;Timekeeping&lt;br/&gt;Timestamps · Sessions&lt;br/&gt;Auth · RBAC" style="rounded=1;fillColor=#0d2137;strokeColor=#0d47a1;strokeWidth=1;fontColor=#90caf9;fontSize=9;fontFamily=Courier New;align=center;verticalAlign=middle;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="641.25" y="386" width="140" height="58" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="&lt;b&gt;LwIP Stack&lt;/b&gt;&lt;br/&gt;TCP/IP · DHCP&lt;br/&gt;Web Server&lt;br/&gt;MQTT Client" style="rounded=1;fillColor=#0d2137;strokeColor=#0d47a1;strokeWidth=1;fontColor=#90caf9;fontSize=9;fontFamily=Courier New;align=center;verticalAlign=middle;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="792.25" y="386" width="122" height="58" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="fillColor=#1e3a5f;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="493.25" y="454" width="436" height="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="&lt;b&gt;FreeRTOS&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#4fc3f7;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="687.25" y="458.5" width="48" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="fillColor=#1e3a5f;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="493.25" y="475" width="436" height="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="DC-DC Isolated 1W  ·  Capacitor Early Warning  ·  Bootloader OTA  ·  Secure Boot&lt;br/&gt;OUTPUTS PROTECTED  ·  High-Side Current Sense  ·  RBAC: Admin / User / Viewer / Root" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=8;fontColor=#37474f;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="493.75" y="478.5" width="436" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="⚡ POWER" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontStyle=1;fontColor=#ff8f00;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="329.5" y="135" width="100" height="14" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="4-20mA IN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontStyle=1;fontColor=#66bb6a;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="333" y="251" width="100" height="14" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="PT100" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontStyle=1;fontColor=#26c6da;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="343.5" y="392" width="100" height="14" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="OPTO IN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontStyle=1;fontColor=#42a5f5;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="344.5" y="476" width="100" height="14" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="" style="rounded=1;fillColor=#e65100;strokeColor=#ff8f00;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="343.5" y="149" width="87" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="" style="rounded=1;fillColor=#bf360c;strokeColor=#ff8f00;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="343.5" y="177" width="108" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="rounded=1;fillColor=#4e342e;strokeColor=#ff8f00;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="343.5" y="208" width="115" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="" style="fillColor=#2e7d32;strokeColor=none;opacity=40;" parent="1" vertex="1">
+                    <mxGeometry x="343.5" y="243" width="37" height="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="" style="rounded=1;fillColor=#1b5e20;strokeColor=#4caf50;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="344.5" y="267" width="85" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="" style="rounded=1;fillColor=#1b5e20;strokeColor=#4caf50;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="344.5" y="295" width="85" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="" style="rounded=1;fillColor=#1b5e20;strokeColor=#4caf50;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="344.5" y="323" width="85" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="" style="rounded=1;fillColor=#1b5e20;strokeColor=#4caf50;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="345" y="351" width="84.5" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="" style="fillColor=#2e7d32;strokeColor=none;opacity=40;" parent="1" vertex="1">
+                    <mxGeometry x="344.5" y="382" width="37" height="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="" style="rounded=1;fillColor=#006064;strokeColor=#26c6da;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="344.5" y="406" width="100" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="" style="rounded=1;fillColor=#006064;strokeColor=#26c6da;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="344.5" y="434" width="100" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="" style="fillColor=#2e7d32;strokeColor=none;opacity=40;" parent="1" vertex="1">
+                    <mxGeometry x="344.5" y="468" width="37" height="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="" style="rounded=1;fillColor=#0d47a1;strokeColor=#42a5f5;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="345" y="488" width="96" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="" style="rounded=1;fillColor=#0d47a1;strokeColor=#42a5f5;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="345" y="516" width="96" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="" style="rounded=1;fillColor=#0d47a1;strokeColor=#42a5f5;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="345" y="544" width="96" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="" style="rounded=1;fillColor=#0d47a1;strokeColor=#42a5f5;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="345" y="572" width="96" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="" style="fillColor=#2e7d32;strokeColor=none;opacity=40;" parent="1" vertex="1">
+                    <mxGeometry x="344.5" y="604" width="37" height="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="" style="rounded=1;fillColor=#7f0000;strokeColor=#ef5350;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="345" y="614.5" width="100" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="SOLENOID OUT" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontStyle=1;fontColor=#ff7043;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="998.5" y="185" width="130" height="14" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="OPTO OUT" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontStyle=1;fontColor=#fdd835;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="994.5" y="277" width="130" height="14" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="MOSFET PWM" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontStyle=1;fontColor=#ce93d8;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="980.5" y="416" width="130" height="14" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="" style="rounded=1;fillColor=#bf360c;strokeColor=#ff7043;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="988.5" y="200" width="149" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="" style="rounded=1;fillColor=#bf360c;strokeColor=#ff7043;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="989.5" y="239" width="148" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="" style="fillColor=#2e7d32;strokeColor=none;opacity=40;" parent="1" vertex="1">
+                    <mxGeometry x="1099.5" y="276" width="38" height="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="" style="rounded=1;fillColor=#e65100;strokeColor=#fdd835;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="978.5" y="293" width="159" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="" style="rounded=1;fillColor=#e65100;strokeColor=#fdd835;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="978.5" y="321" width="159" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="" style="rounded=1;fillColor=#e65100;strokeColor=#fdd835;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="978.5" y="349" width="159" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="" style="rounded=1;fillColor=#e65100;strokeColor=#fdd835;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="978.5" y="377" width="159" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="" style="fillColor=#2e7d32;strokeColor=none;opacity=40;" parent="1" vertex="1">
+                    <mxGeometry x="1099.5" y="412" width="38" height="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" value="" style="rounded=1;fillColor=#4a148c;strokeColor=#ce93d8;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="961.5" y="428.5" width="176" height="23" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" value="" style="rounded=1;fillColor=#4a148c;strokeColor=#ce93d8;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="961.5" y="456.5" width="176" height="23" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" value="" style="rounded=1;fillColor=#4a148c;strokeColor=#ce93d8;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="961.5" y="484.5" width="176" height="23" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="" style="fillColor=#2e7d32;strokeColor=none;opacity=40;" parent="1" vertex="1">
+                    <mxGeometry x="1099.5" y="526.5" width="38" height="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="" style="rounded=1;fillColor=#311b92;strokeColor=#b39ddb;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="954" y="540.5" width="183" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="" style="fillColor=#2e7d32;strokeColor=none;opacity=40;" parent="1" vertex="1">
+                    <mxGeometry x="1099" y="578.5" width="38" height="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="" style="rounded=1;fillColor=#004d40;strokeColor=#26a69a;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="947" y="589.5" width="190" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" value="COMMUNICATION" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontStyle=1;fontColor=#42a5f5;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="658.75" y="155" width="127" height="12" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="&lt;b&gt;ETH  ①&lt;/b&gt;&lt;br/&gt;Web UI · MQTT" style="rounded=1;fillColor=#0d47a1;strokeColor=#42a5f5;strokeWidth=1.5;html=1;fontColor=#90caf9;fontSize=9;fontFamily=Courier New;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="512.75" y="111" width="80" height="38" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" value="&lt;b&gt;ETH  ②&lt;/b&gt;&lt;br/&gt;FTP · SCP · OTA" style="rounded=1;fillColor=#0d47a1;strokeColor=#42a5f5;strokeWidth=1.5;html=1;fontColor=#90caf9;fontSize=9;fontFamily=Courier New;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="612.75" y="111" width="93" height="38" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" value="&lt;b&gt;USB&lt;/b&gt;&lt;br/&gt;Debug · Flash" style="rounded=1;fillColor=#1a237e;strokeColor=#7986cb;strokeWidth=1.5;html=1;fontColor=#c5cae9;fontSize=9;fontFamily=Courier New;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="722.75" y="111" width="80" height="38" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" value="&lt;b&gt;BOOT0&lt;/b&gt;&lt;br/&gt;Bootloader Entry" style="rounded=1;fillColor=#212121;strokeColor=#616161;strokeWidth=1.5;html=1;fontColor=#bdbdbd;fontSize=9;fontFamily=Courier New;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="832.75" y="111" width="99" height="38" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" value="RS-485  BUS  —  Modbus RTU  &lt; 230k baud" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontStyle=1;fontColor=#29b6f6;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="565.75" y="627" width="314" height="14" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" value="&lt;b&gt;RS-485  PORT  ①&lt;/b&gt;&lt;br/&gt;Bus A  —  Οθόνες Μαλακτήρων" style="rounded=1;fillColor=#01579b;strokeColor=#29b6f6;strokeWidth=1.5;html=1;fontColor=#81d4fa;fontSize=9;fontFamily=Courier New;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="565.5" y="642.5" width="140" height="38" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" value="&lt;b&gt;RS-485  PORT  ②&lt;/b&gt;&lt;br/&gt;Bus B  —  RS-485 Αισθητήρες" style="rounded=1;fillColor=#01579b;strokeColor=#29b6f6;strokeWidth=1.5;html=1;fontColor=#81d4fa;fontSize=9;fontFamily=Courier New;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="746.25" y="642.5" width="139" height="38" as="geometry"/>
+                </mxCell>
+                <mxCell id="93" value="" style="rounded=1;fillColor=#0e1015;strokeColor=#263238;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="1183" y="71" width="248" height="372" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" value="LEGEND" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#78909c;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="1183" y="78" width="248" height="16" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" value="" style="rounded=1;fillColor=#e65100;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1196" y="101" width="13" height="11" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="Power Supply  24V DC" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#78909c;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="1216" y="98" width="210" height="16" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" value="" style="rounded=1;fillColor=#1b5e20;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1196" y="119" width="13" height="11" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="4-20mA Analog Input  (×4)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#78909c;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="1216" y="116" width="210" height="16" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="" style="rounded=1;fillColor=#006064;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1196" y="137" width="13" height="11" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="PT100 Temperature  (×2)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#78909c;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="1216" y="134" width="210" height="16" as="geometry"/>
+                </mxCell>
+                <mxCell id="101" value="" style="rounded=1;fillColor=#0d47a1;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1196" y="155" width="13" height="11" as="geometry"/>
+                </mxCell>
+                <mxCell id="102" value="Opto Input  Isolated  (×4)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#78909c;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="1216" y="152" width="210" height="16" as="geometry"/>
+                </mxCell>
+                <mxCell id="103" value="" style="rounded=1;fillColor=#7f0000;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1196" y="173" width="13" height="11" as="geometry"/>
+                </mxCell>
+                <mxCell id="104" value="E-STOP  Dedicated HW  (×1)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#78909c;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="1216" y="170" width="210" height="16" as="geometry"/>
+                </mxCell>
+                <mxCell id="105" value="" style="fillColor=#263238;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1196" y="189" width="230" height="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="106" value="" style="rounded=1;fillColor=#bf360c;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1196" y="197" width="13" height="11" as="geometry"/>
+                </mxCell>
+                <mxCell id="107" value="Solenoid Out  24V/1A  (×2)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#78909c;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="1216" y="194" width="210" height="16" as="geometry"/>
+                </mxCell>
+                <mxCell id="108" value="" style="rounded=1;fillColor=#e65100;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1196" y="215" width="13" height="11" as="geometry"/>
+                </mxCell>
+                <mxCell id="109" value="Opto Output  Open Collector  (×4)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#78909c;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="1216" y="212" width="210" height="16" as="geometry"/>
+                </mxCell>
+                <mxCell id="110" value="" style="rounded=1;fillColor=#4a148c;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1196" y="233" width="13" height="11" as="geometry"/>
+                </mxCell>
+                <mxCell id="111" value="MOSFET PWM  2A/24V  (×3)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#78909c;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="1216" y="230" width="210" height="16" as="geometry"/>
+                </mxCell>
+                <mxCell id="112" value="" style="rounded=1;fillColor=#311b92;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1196" y="251" width="13" height="11" as="geometry"/>
+                </mxCell>
+                <mxCell id="113" value="PWR MOSFET  6-7A/24V  (×1)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#78909c;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="1216" y="248" width="210" height="16" as="geometry"/>
+                </mxCell>
+                <mxCell id="114" value="" style="rounded=1;fillColor=#004d40;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1196" y="269" width="13" height="11" as="geometry"/>
+                </mxCell>
+                <mxCell id="115" value="Analog Out  4-20mA/0-20V  (×1)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#78909c;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="1216" y="266" width="210" height="16" as="geometry"/>
+                </mxCell>
+                <mxCell id="116" value="" style="fillColor=#263238;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1196" y="285" width="230" height="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="117" value="" style="rounded=1;fillColor=#0d47a1;strokeColor=#42a5f5;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="1196" y="293" width="13" height="11" as="geometry"/>
+                </mxCell>
+                <mxCell id="118" value="Ethernet RJ45  (×2)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#78909c;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="1216" y="290" width="210" height="16" as="geometry"/>
+                </mxCell>
+                <mxCell id="119" value="" style="rounded=1;fillColor=#1a237e;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1196" y="311" width="13" height="11" as="geometry"/>
+                </mxCell>
+                <mxCell id="120" value="USB  ·  BOOT0 Header" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#78909c;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="1216" y="308" width="210" height="16" as="geometry"/>
+                </mxCell>
+                <mxCell id="121" value="" style="rounded=1;fillColor=#01579b;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1196" y="329" width="13" height="11" as="geometry"/>
+                </mxCell>
+                <mxCell id="122" value="RS-485  Modbus RTU  (×2)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#78909c;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="1216" y="326" width="210" height="16" as="geometry"/>
+                </mxCell>
+                <mxCell id="123" value="" style="fillColor=#263238;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1196" y="345" width="230" height="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="124" value="" style="rounded=1;fillColor=#0a1628;strokeColor=#1565c0;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="1196" y="353" width="13" height="11" as="geometry"/>
+                </mxCell>
+                <mxCell id="125" value="MCU  STM32H7  Dual Core" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#78909c;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="1216" y="350" width="210" height="16" as="geometry"/>
+                </mxCell>
+                <mxCell id="126" value="⚡ OUTPUTS PROTECTED  ·  ▲ High-Side Current Sense&lt;br/&gt;KiCad  ·  Target Oct 2026" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=8;fontColor=#37474f;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="1183" y="367" width="248" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="127" value="" style="rounded=1;fillColor=#0e1015;strokeColor=#263238;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="1187" y="460" width="248" height="259" as="geometry"/>
+                </mxCell>
+                <mxCell id="128" value="I / O  SUMMARY" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#78909c;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="1187" y="466" width="248" height="16" as="geometry"/>
+                </mxCell>
+                <mxCell id="129" value="IN   4×  4-20mA Analog&lt;br/&gt;IN   2×  PT100 RTD  0-90°C&lt;br/&gt;IN   4×  Opto Isolated Digital&lt;br/&gt;IN   1×  E-STOP Dedicated HW" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#37474f;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="1200" y="490" width="226" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="130" value="" style="fillColor=#263238;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1200" y="556" width="226" height="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="131" value="OUT  2×  Solenoid  24V/1A  + CurrSense&lt;br/&gt;OUT  4×  Opto  Open Collector&lt;br/&gt;OUT  3×  MOSFET PWM  2A/24V  RGB&lt;br/&gt;OUT  1×  PWR MOSFET  6-7A/24V&lt;br/&gt;OUT  1×  Analog  4-20mA / 0-20V" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#37474f;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="1200" y="560" width="226" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="132" value="" style="fillColor=#263238;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1200" y="642" width="226" height="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="133" value="BUS  2×  RS-485  Modbus RTU&lt;br/&gt;NET  2×  Ethernet  RJ45&lt;br/&gt;USB  1×  Debug / Flash" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#37474f;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="1200" y="646" width="226" height="48" as="geometry"/>
+                </mxCell>
+                <mxCell id="134" value="" style="fillColor=#263238;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1200" y="696" width="226" height="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="135" value="11 IN  +  11 OUT  +  5 BUS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#546e7a;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="1187" y="698" width="248" height="16" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="&lt;b&gt;24V DC IN&lt;/b&gt;&lt;br/&gt;PSU  Τροφοδοσία" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=9;fontColor=#ffb74d;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="350.5" y="147" width="76" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="&lt;b&gt;DC-DC ISO  1W&lt;/b&gt;&lt;br/&gt;Απομονωμένο  3.3V/5V" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=9;fontColor=#ffb74d;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="346.5" y="175" width="103" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="&lt;b&gt;&lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;CAP WARN&lt;/font&gt;&lt;/b&gt;&lt;br&gt;Πρώιμη Προειδοποίηση" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=9;fontColor=#ffa726;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="380.5" y="205" width="77" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="&lt;b&gt;4-20mA  ①&lt;/b&gt;&lt;br/&gt;Δυναμοκυψέλη  ①" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=9;fontColor=#81c784;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="369.5" y="264" width="60" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="&lt;b&gt;4-20mA  ②&lt;/b&gt;&lt;br/&gt;Δυναμοκυψέλη  ②" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=9;fontColor=#81c784;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="368.5" y="292" width="61" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="&lt;b&gt;4-20mA  ③&lt;/b&gt;&lt;br/&gt;Αισθ. Στάθμης" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=9;fontColor=#81c784;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="367.5" y="320" width="62" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="&lt;b&gt;4-20mA  ④&lt;/b&gt;&lt;br/&gt;Αισθ. Ιξώδους" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=9;fontColor=#81c784;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="367.5" y="348" width="62" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="&lt;b&gt;PT100  ①&lt;/b&gt;&lt;br/&gt;Θερμοκρασία  0–90°C" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=9;fontColor=#80deea;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="370.5" y="404" width="74" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="&lt;b&gt;PT100  ②&lt;/b&gt;&lt;br/&gt;Θερμοκρασία  0–90°C" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=9;fontColor=#80deea;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="372.5" y="432" width="72" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="&lt;b&gt;OPTO IN  ①&lt;/b&gt;&lt;br/&gt;Ψηφ. Είσοδος  ISO" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=9;fontColor=#90caf9;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="391" y="485" width="50" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="&lt;b&gt;OPTO IN  ②&lt;/b&gt;&lt;br/&gt;Ψηφ. Είσοδος  ISO" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=9;fontColor=#90caf9;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="513" width="51" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="&lt;b&gt;OPTO IN  ③&lt;/b&gt;&lt;br/&gt;Ψηφ. Είσοδος  ISO" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=9;fontColor=#90caf9;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="389" y="541" width="52" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="&lt;b&gt;OPTO IN  ④&lt;/b&gt;&lt;br/&gt;Ψηφ. Είσοδος  ISO" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=9;fontColor=#90caf9;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="389" y="569" width="52" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="&lt;b&gt;E-STOP 🍄&lt;/b&gt;&lt;br/&gt;Έκτακτη Ανάγκη  HW" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=9;fontColor=#ef9a9a;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="385" y="614.5" width="57" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="&lt;b&gt;SOLENOID  ①&lt;/b&gt;&lt;br/&gt;Βαλβίδα Πλήρωσης  24V / 1A" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#ff8a65;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="989.5" y="198" width="135" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="&lt;b&gt;SOLENOID  ②&lt;/b&gt;&lt;br/&gt;Βαλβίδα Εκκένωσης  24V / 1A" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#ff8a65;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="988.5" y="236" width="136" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="&lt;b&gt;OPTO OUT  ①&lt;/b&gt;&lt;br/&gt;Ρελέ Κινητήρα  Open Collector" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#fff176;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="978.5" y="290" width="133" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" value="&lt;b&gt;OPTO OUT  ②&lt;/b&gt;&lt;br/&gt;Ρελέ Κινητήρα  Open Collector" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#fff176;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="978" y="318" width="136" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" value="&lt;b&gt;OPTO OUT  ③&lt;/b&gt;&lt;br/&gt;Ρελέ Κινητήρα  Open Collector" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#fff176;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="978.5" y="346" width="131" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="&lt;b&gt;OPTO OUT  ④&lt;/b&gt;&lt;br/&gt;Ρελέ Κινητήρα  Open Collector" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#fff176;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="978" y="375" width="128" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" value="&lt;font&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;color: rgb(204, 153, 255);&quot;&gt;MOSFET PWM  ①&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;/font&gt;RGB LED  2A / 24V  —  Μαλακτήρας ①" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#e1bee7;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="961.5" y="426" width="133" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="&lt;font&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;color: rgb(204, 153, 255);&quot;&gt;MOSFET PWM  ②&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;/font&gt;RGB LED  2A / 24V  —  Μαλακτήρας ②" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#e1bee7;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="961.5" y="454" width="133" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="&lt;b&gt;&lt;font style=&quot;color: rgb(204, 153, 255);&quot;&gt;MOSFET PWM  ③&lt;/font&gt;&lt;/b&gt;&lt;br&gt;RGB LED  2A / 24V  —  Μαλακτήρας ③" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#e1bee7;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="961.5" y="482" width="133" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" value="&lt;b&gt;&lt;font style=&quot;color: rgb(153, 153, 255);&quot;&gt;PWR MOSFET&lt;/font&gt;&lt;/b&gt;&lt;br&gt;Φωτισμός Προβολέα LED  6-7A / 24V" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#d1c4e9;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="958" y="537.5" width="179" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="&lt;b&gt;&lt;font style=&quot;color: rgb(153, 255, 153);&quot;&gt;ANALOG OUT&lt;/font&gt;&lt;/b&gt;&lt;br&gt;Έξοδος  4-20mA  /  0-20V  Configurable" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#80cbc4;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="949" y="586.5" width="188" height="28" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
